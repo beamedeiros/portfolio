@@ -772,7 +772,15 @@ Link do repositório do projeto: https://github.com/DolphinDatabase/Cloud-In
 
 ### Tecnologias adotadas na solução
 
-Para o desenvolvimento web utilizamos o Framework VueJS, já citado anteriormente no projeto 4.
+Para o desenvolvimento web utilizamos o framework VueJS, já citado anteriormente no projeto 4, porém com o Tailwind.
+
+<details><summary>Tailwind</summary>
+<p align="justify">
+
+>Tailwind é um framework CSS que permite há você criar layouts para suas aplicações web utilizando sua estrutura, ou seja, uma ferramenta que fornece componentes para sua estilização.
+
+</details>
+
 O back-end foi feito em Python com Flask.
 
 <details><summary>Flask</summary>
@@ -791,12 +799,68 @@ E o banco de dados foi armazenado no MySQL.
 
 </details>
 
-Mantendo a linha dos dois projetos anteriores, utilizamos React para o front-end, inclusive com o Reactive Native para as telas mobile.
-No backend, as mesmas linguagens e ferramentas foram usadas em relação ao projeto anterior.
+Um diferencial nesse projeto foi a adição de DevOps como critério de aceite por parte da FATEC.
 
-#### Contribuições pessoais
-Desenvolvimento do backend da aplicação, em especial serviços CRUD e o chat da ferramenta. <br/>
-Fui responsável pelo desenvolvimento da feature de comunicação em tempo real entre comprador e vendedor foi desenvolvida utilizando web socket, com a biblioteca [Socket.Io](https://socket.io/). A inclusão desta tecnologia foi de grande desafio e valia no projeto, pois é a primeira vez que utilizamos este tipo de comunicação entre cliente e servidor em um projeto integrador, então foi necessário um aprendizado ágil para sua implementação.<br/>
+Os processos utilizados foram:
+
+<details><summary>GitFlow</summary>
+<p align="justify">
+
+>O método GitFlow funciona a partir de branchs, que são ramificações montadas em um modelo gráfico que parece uma árvore com diversos galhos. Cada fluxo do GitFlow possui cinco ramificações que durante o desenvolvimento do projeto se integram uma à outra constantemente
+
+</details>
+
+<details><summary>Issue Tracking</summary>
+<p align="justify">
+
+>Para a ferramenta de gestão optamos por utilizar o Jira, ele está estruturado com Epic/Story/Task. As histórias, no nosso caso, equivalem a questões, onde podemos integrar com o github usando o seu id. Para dar commit, utilizamos o pré-commit onde definimos que todo commit deve começar com a abreviatura padrão para histórias (CLD-) e o número (varia para cada história).
+
+</details>
+
+<details><summary>CI (Continuous Integration)</summary>
+<p align="justify">
+
+>Conforme esquema de gitflow do projeto, a branch principal é a de produção, devido a esse processo, existe um fluxo de ações do github que realiza a implantação automática no servidor de produção AWS EC2. A implantação é feita em um container, e ela é criada a partir de uma imagem do [Dockerfile](https://github.com/DolphinDatabase/Cloudin-backend/blob/main/Dockerfile), além disso, toda vez que a implantação é feita, todas as imagens e containers são deletados de acordo com o [deploy flow](https://github.com/DolphinDatabase/Cloudin-backend/blob/main/.github/workflows/deploy.yml).
+
+</details>
+
+<details><summary>Unit Test</summary></summary>
+<p align="justify">
+
+>No teste unitário testamos funções e o retorno esperado, há também o teste de banco de dados, onde testamos sua regra de negócio. O teste de unidade ocorre sempre que há uma solicitação pull para o branch dev.
+
+</details>
+
+<details><summary>Integration Test</summary></summary>
+<p align="justify">
+
+>O teste de integração testa a conexão com o servidor e, no nosso caso, testa transferências de arquivos, validação de token e autenticação. Este teste é manual.
+
+</details>
+
+<details><summary>Monitoring</summary></summary>
+<p align="justify">
+
+>O projeto usa uma instância Amazon Linux EC2 para hospedar a API escrita em Flask. Dentro desta máquina virtual, utilizamos a imagem docker "zabbix/zabbix-agent:latest", que já possui um banco de dados PostgreSQL embarcado, para criar o container "zabbix_server" e utilizar a infraestrutura de monitoramento que a plataforma Zabbix oferece. Este contêiner usa a distribuição Alpine Linux e usamos o gerenciador de pacotes "apk" para instalar o "zabbix-agent". Na interface web do zabbix, criamos o host chamado "Backend" que é referenciado dentro do arquivo de configuração "zabbix-agent".
+
+</details>
+
+<details><summary>CD (Continuous Delivery)</summary></summary>
+<p align="justify">
+
+
+</details>
+
+### Contribuições pessoais
+Neste projeto, minhas principais funções foram o desenvolvimento das telas no front-end e sua prototipação, autenticação utilizando Google, testes unitários e rotas no back-end, além de ser PO, mantendo um contato contínuo com o cliente afim de praticar comunicação.
+
+Abaixo mostro alguns exemplos do desenvolvimento do front-end em VueJS.
+
+<details><summary>Tela - Home</summary></summary>
+<p align="justify">
+
+
+</details>
 
 
 ## Aprendizados Efetivos HS
