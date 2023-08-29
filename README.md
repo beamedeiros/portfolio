@@ -771,12 +771,25 @@ O software Cloud-In é um aplicativo orquestrador para transferência automátic
 Link do repositório do projeto: https://github.com/DolphinDatabase/Cloud-In
 
 ### Tecnologias adotadas na solução
-- NodeJS <br/>
-- Typescript <br/>
-- Express <br/>
-- PostgreSQL <br/>
-- ReactJS <br/>
-- Docker <br/>
+
+Para o desenvolvimento web utilizamos o Framework VueJS, já citado anteriormente no projeto 4.
+O back-end foi feito em Python com Flask.
+
+<details><summary>Flask</summary>
+<p align="justify">
+	
+>Flask é um micro-framework multiplataforma que provê um modelo simples para o desenvolvimento web. Podemos dizer que o micro-framework é uma versão minimalista de frameworks, sendo bastante utilizado para criação de microsserviços, como APIs RESTful.
+
+</details>
+
+E o banco de dados foi armazenado no MySQL.
+
+<details><summary>MySQL</summary>
+<p align="justify">
+
+>O MySQL é um sistema gerenciador de banco de dados relacional de código aberto usado na maioria das aplicações gratuitas para gerir suas bases de dados. O MySQL utiliza a linguagem SQL (Structure Query Language – Linguagem de Consulta Estruturada), que é a linguagem mais popular para inserir, acessar e gerenciar o conteúdo armazenado num banco de dados.
+
+</details>
 
 Mantendo a linha dos dois projetos anteriores, utilizamos React para o front-end, inclusive com o Reactive Native para as telas mobile.
 No backend, as mesmas linguagens e ferramentas foram usadas em relação ao projeto anterior.
