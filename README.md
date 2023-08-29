@@ -744,7 +744,7 @@ Minhas áreas de atuação:
 - Orçamento: front-end e back-end
 - Mapeamento gráfico: front-end
 
-## Aprendizados Efetivos
+### Aprendizados Efetivos
 Durante o projeto participei de um Hackathon organizado pela empresa Soluções Sophia, junto com os outros integrantes do grupo Dolphin Database.
 Nesse evento, unimos tecnologia e educação onde nosso objetivo foi aperfeiçoar as ideias e implementá-las em um aplicativo feito para professores, pais e alunos. Meu grupo ficou responsável pelo tópico de frequência de alunos, então desenvolvi um protótipo no figma e a aplicação front-end utilizando o VueJS.
 
