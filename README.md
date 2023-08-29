@@ -770,22 +770,7 @@ O software Cloud-In é um aplicativo orquestrador para transferência automátic
 
 Link do repositório do projeto: https://github.com/DolphinDatabase/Cloud-In
 
-Além disso, a ferramenta deveria possibilitar a carga de alguns dados, como de novos usuários e anúncios.
-
-Como solução ao problema, foi criada a plataforma [OneCar](https://github.com/OneCar-API). A OneCar é uma aplicação Web e mobile para anúncio de veículos à venda.
-A OneCar possui diversas funcionalidades, como:
-
-- Cadastro de usuários e anúncios automatizados por meio de cargas;
-- App mobile para visualização e busca de anúncios;
-- Comunicação em tempo real com o vendedor, assim como acesso ao seu contato em casos onde isso é desejado pelas partes;
-- Busca pelos anúncios por palavras-chaves e itens dos veículos.
-
-
-<img src="https://user-images.githubusercontent.com/54003876/142731498-cf7ccb60-cc0a-4bce-a24e-a82d8b916d17.png" height="500"/>
-
-##### *Figura 10. OneCar*
-
-## Tecnologias utilizadas:
+### Tecnologias adotadas na solução
 - NodeJS <br/>
 - Typescript <br/>
 - Express <br/>
@@ -807,58 +792,6 @@ Fui responsável pelo desenvolvimento da feature de comunicação em tempo real 
 - Utilização de ORM's com banco relacional: Sei fazer com autonomia; 
 - Utilização de banco NoSQL: Sei fazer com autonomia;
 - Comunicação em tempo real entre cliente e servidor com web socket: Sei fazer com autonomia.
-
-
-# Projeto 6 - 1º semestre de 2022
-## Empresa parceira:
-UOL
-
-<img src="https://conteudo.imguol.com.br/c/home/layout/vueland/icons/brand/uol-logo-full.svg?v4" height="150"/>
-
-##### *Figura 11. UOL (Fonte: https://www.uol.com.br/)*
-
-A UOL é uma companhia brasileira, fundada em 1996. Pioneira no mercado online nacional, foi a dona do primeiro portal de conteúdos no país. O portal de UOL, que carrega o nome da empresa, segue sendo o maior do Brasil.
-
-### Visão do Projeto
-
-Nosso parceiro deste projeto solicitou a criação de uma ferramenta que pudesse prever a indisponibilidade de seus serviços online. O produto desenvolvido deveria ser capaz de monitorar a saúde da aplicação e prever que num futuro breve um problema pode ocorrer, caso o cenário seja este.
-
-Considerando a larga escala de utilização dos produtos do nosso parceiro, prever possíveis indisponibilidades futuras seria um ótimo mecanismo de garantir disponibilidade máxima para seus usuários. 
-
-Para atender às demandas solicitas, a [Orbit](https://github.com/orbit-api) foi desenvolvida. A Orbit é uma ferramenta de monitoramento que tem como objetivo coletar os dados de saúde de um serviço e, com base nos dados coletados de cenários de indisponibilidade, pode prever um novo cenário de queda do serviço monitorado. Caso um evento deste tipo seja previsto, os responsáveis pela aplicação são notificados de que um possível problema deverá ocorrer.
-
-
-<img src="https://user-images.githubusercontent.com/56441318/160112708-193a18fe-2241-427c-8fe0-2dc23324b48a.png" height="500"/>
-
-##### *Figura 12. Orbit*
-
-## Tecnologias utilizadas:
-- Java <br/>
-- Spring Boot <br/>
-- Hibernate <br/>
-- PostgreSQL <br/>
-- Vue Js <br/>
-- Docker <br/>
-- Locust.io <br/>
-- Prometheus <br/>
-- Scikit-learn <br/>
-
-Neste semestre houve uma mudança na stack de tecnologias. O Vue JS foi a biblioteca utilizada na construção de páginas, e a linguagem Java, junto com o Spring e Hibernate, foram utilizadas no desenvolvimento das API's e serviços.
-Isso proporcionou uma mudança na arquitetura da ferramenta. 
-
-#### Contribuições pessoais
-Minha atuação neste projeto foi focada nas criações de cenários de indisponibilidade e testes para geração de dados.
-A serviço oferecido pela Orbit se baseia no aprendizado de máquina proporcionado por estes testes, onde diferentes características da saúde do serviço monitorado devem ser considerados. <br>
-Utilizei ferramentas de teste em carga, como o Locust.io, e ao mesmo tempo aplicações de monitoramento para relacionar estados como (consumo de recursos como CPU, memória, tempo de resposta, latência considerando a rede, etc) com o nível de estresse da aplicação monitorada. Além do trabalho de relacionar estes dados em estruturas que pudessem ser utilizadas por modelos de aprendizado de máquina.<br>
-Com isso, minhas contribuições foram focadas na criação dos testes, para que pudessem representar o funcionamento de uma aplicação em diferentes cenários. Em coletar os dados do monitoramento da aplicação durante os testes, incluindo informações de monitoramente que pudessem medir diferentes aspectos da saúde da aplicação, e em armazenar estas métricas para alimentar de forma útil nosso modelo de maching learning, que se baseará na extrapolação dos dados no tempo para prever possíveis indisponibilidades. <br> <br>
-O Scikit-learn foi utilizado realizando duas tarefas principais:<br>
-- Utilizar os dados de saúde da aplicação e extrapolá-los no tempo, para que se pudesse ter uma estimativa no futuro de como estas métricas estariam.<br>
-- Com os dados extrapolados, aplicar uma árvore de decisão para definir se naquele ponto no tempo, haveria risco futuro próximo de cenários de indisponibilidade. 
-
-## Aprendizados Efetivos HS
-- Monitoramento de atributos de performance de aplicações web: Sei fazer com autonomia; 
-- Coleta e tratamento de dados para uso em bibliotecas de aprendizado de máquina: Sei fazer com autonomia; 
-- Desenvolvimento de API's com Spring Boot: Sei fazer com autonomia.
 
 ## Contatos:
 
