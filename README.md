@@ -531,7 +531,7 @@ Sua interface web facilita a gestão de dados e dá autonomia aos usuários dess
 
 Link do repositório do projeto: https://github.com/DolphinDatabase/MCS
 
-## Tecnologias utilizadas:
+### Tecnologias adotadas na solução
 <p align="justify">
 Assim como no projeto anterior, a aplicação teve desenvolvimento web, a única diferença foi utilização o framework VueJS para a construção do front-end da aplicação.
 <details><summary>VueJS</summary>
