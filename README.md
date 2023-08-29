@@ -754,7 +754,7 @@ Como aluna destaque, fui contratada como estagiária na Soluções Sophia, onde 
 - Desenvolvimento utilizando VueJS: sei fazer com autonomia.
 - Utilização de OracleCloud: sei fazer com autonomia.
 
-# Projeto 5 - 2º semestre de 2021
+# Projeto 5 - 2º semestre de 2023
 ## Empresa parceira:
 MidAll<br/>
 ![midall](https://user-images.githubusercontent.com/74321890/191144569-593506c4-b02e-41bf-830d-9f6e88a57278.jpeg)
