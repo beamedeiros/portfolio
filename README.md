@@ -776,7 +776,7 @@ Link do repositório do projeto: https://github.com/DolphinDatabase/Cloud-In
 
 ### Tecnologias adotadas na solução
 
-Para o desenvolvimento web utilizamos o framework VueJS, já citado anteriormente no projeto 4, porém com o Tailwind.
+Para o desenvolvimento web utilizamos o framework VueJS, já citado anteriormente no projeto 4, porém com o framework Tailwind para o CSS.
 
 <details><summary>Tailwind</summary>
 <p align="justify">
