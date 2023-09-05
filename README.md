@@ -513,7 +513,7 @@ Subiter
 <img src="https://user-images.githubusercontent.com/74321890/200832569-795e2fa6-0fc6-4b1e-8547-d7b2abf82c0b.jpg" height="300"/>
 
 <p align="justify">
-A Subiter é uma empresa de base tecnológica especializada em visão infravermelha. Sua missão é ajudar a indústria a alcançar excelência em seus processos produtivos. Por meio de sistemas inteligentes de inspeção e monitoramento, podemos observar fenômenos que estão além da capacidade dos olhos humanos.
+A Subiter é uma empresa de base tecnológica especializada em visão infravermelha.
 
 ### Visão do Projeto
 <p align="justify">
