@@ -538,12 +538,16 @@ Assim como no projeto anterior, a aplicação teve desenvolvimento web, a única
 <p align="justify">
 	
 >Vue.js é um framework JavaScript de código aberto utilizado para construir interfaces de usuário interativas e dinâmicas. Ele é baseado em componentes reutilizáveis e adota uma abordagem de programação reativa, permitindo a criação de aplicativos web de uma única página (SPA) de forma eficiente. O Vue.js combina recursos modernos do JavaScript com uma sintaxe simples e intuitiva, facilitando o desenvolvimento de aplicativos web complexos. Ele é amplamente utilizado na comunidade de desenvolvimento web devido à sua flexibilidade, desempenho e curva de aprendizado suave.
+
+Utilizamos este framework para desenvolver o front-end da aplicação.
 </details>
 
 <details><summary>Konva</summary>
 <p align="justify">
 	
 >Konva.js é uma biblioteca JavaScript de código aberto que facilita a criação de gráficos interativos e de alto desempenho em aplicativos da web. Ela é especialmente projetada para trabalhar com elementos gráficos bidimensionais, como desenhos, animações e manipulação de objetos em um ambiente de tela HTML5. Konva.js fornece uma API simples e poderosa que permite criar e gerenciar facilmente elementos gráficos, aplicar transformações, adicionar interatividade, detectar eventos, fazer desenhos vetoriais e muito mais. Com a ajuda do Konva.js, os desenvolvedores podem criar aplicativos visualmente ricos, como editores de imagem, jogos, mapas interativos e ferramentas de desenho.
+
+Utilizamos o Konva para desenhar o mapeamento de anomalias.
 </details>
 	
 Para a programação das rotas HTTP, os serviços e API do back-end foram feitas em Java.
