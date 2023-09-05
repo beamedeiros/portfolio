@@ -320,7 +320,7 @@ MidAll <br/>
 ![midall](https://user-images.githubusercontent.com/74321890/191144569-593506c4-b02e-41bf-830d-9f6e88a57278.jpeg)
 
 <p align="justify">
-A MidAll nasceu para simplificar a jornada de evolução do seu negócio, visando atingir qualquer visão estratégica. Nossa missão é preparar as empresas para o futuro em uma nova era de disrupções de mercado somadas aos desafios pós-pandemia. Acreditamos que Tecnologia, Dados e Inovação voltados à geração de valor para o cliente são o ambiente de negócios perfeito para resultados promissores.
+A MidAll é uma empresa que se dedica a ajudar outras empresas a se adaptarem às mudanças do mercado.
 
 ### Visão do Projeto
 <p align="justify">
@@ -760,8 +760,8 @@ MidAll<br/>
 ![midall](https://user-images.githubusercontent.com/74321890/191144569-593506c4-b02e-41bf-830d-9f6e88a57278.jpeg)
 
 <p align="justify">
-A MidAll nasceu para simplificar a jornada de evolução do seu negócio, visando atingir qualquer visão estratégica. Nossa missão é preparar as empresas para o futuro em uma nova era de disrupções de mercado somadas aos desafios pós-pandemia. Acreditamos que Tecnologia, Dados e Inovação voltados à geração de valor para o cliente são o ambiente de negócios perfeito para resultados promissores.
-
+A MidAll é uma empresa que se dedica a ajudar outras empresas a se adaptarem às mudanças do mercado.
+	
 ### Visão do Projeto
 
 O software Cloud-In é um aplicativo orquestrador para transferência automática de arquivos entre sistemas de armazenamento online. Através de sua interface minimalista e interativa, o usuário pode cadastrar suas credenciais e configurar as transferências conforme sua necessidade, iniciando a jornada de download e upload entre os storages.
