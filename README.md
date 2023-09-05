@@ -174,7 +174,7 @@ A imagem abaixo mostra a disposição de informações e resultado do gráfico.
 
 </details>
 
-### Aprendizados Efetivos HS
+### Aprendizados Efetivos
 
 Neste projeto obtive meu primeiro contato com Python e documentações. Esta experiência me ensinou a buscar informações nas fontes primárias, que são as documentações técnicas geralmente realizadas pelos próprios criadores e responsáveis pelas mais diversas tecnologias. Este aprendizado é de grande valia até hoje em minha trajetória acadêmica e profissional.
 
