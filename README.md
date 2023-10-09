@@ -174,7 +174,7 @@ A imagem abaixo mostra a disposição de informações e resultado do gráfico.
 
 </details>
 
-### Aprendizados Efetivos
+### Hard Skills
 
 Neste projeto obtive meu primeiro contato com Python e documentações. Esta experiência me ensinou a buscar informações nas fontes primárias, que são as documentações técnicas geralmente realizadas pelos próprios criadores e responsáveis pelas mais diversas tecnologias. Este aprendizado é de grande valia até hoje em minha trajetória acadêmica e profissional.
 
@@ -184,12 +184,15 @@ Com este desafio, realizei minha primeira decisão de qual tecnologia e tática 
 
 Além disso, consegui distinguir a velocidade de profundidade e velocidade em diferentes métodos de pesquisa e estudo. Diversos tutoriais estão disponíveis ensinando a realizar grande partes das etapas de projetos deste tipo, e estes conteúdos possuem sua importância. 
 
-No mais, temos os pontos específicos abaixo de aprendizados efetivos:
+No mais, temos os pontos específicos abaixo:
 
 - Reconhecimento de voz: sei fazer com autonomia.
 - Envio de e-mail automático: sei fazer com autonomia.
 - Desenvolvimento de scripts em Python: sei fazer com autonomia.
 
+### Soft Skills
+
+Como foi um projeto em grupo que demandou conhecimentos específicos e um grupo com pessoas que conhecia há pouco tempo, desenvolvi muito o trabalho em equipe e a confiança como soft skill.
 
 # Projeto 2: 2º semestre de 2021
 
@@ -303,15 +306,23 @@ if (i == 4 && j == 6) {
   
 </details>  
 
-### Aprendizados Efetivos
-
-Esse projeto foi o primeiro com que tivemos contato com clientes e empresas reais, o que possibilitou aprimorar habilidades sociais.
+### Hard Skills
 
 Além disso, foi quando coloquei em prática as aulas de banco de dados e utilizei para criar um projeto baseado em situações reais do dia a dia da empresa/ cliente.
 
 - Trabalhar com SGBD: sei fazer com autonomia.
 - Criar tabelas, relacionamentos e modelagem: sei fazer com autonomia.
 - Desenvolvimento de scripts em Java: sei fazer com autonomia.
+
+### Soft Skills
+
+Esse projeto foi o primeiro com que tivemos contato com clientes e empresas reais, o que possibilitou ainda mais o aprimoramento de habilidades sociais.
+
+Sendo elas:
+
+- Capacidade de trabalhar sob pressão;
+- Comunicação;
+- Trabalho em equipe.
 
 # Projeto 3: 1º semestre de 2022
 
@@ -489,7 +500,7 @@ Abaixo está o ínicio da documentação feita no Github, para mais detalhes ace
 <img src="https://user-images.githubusercontent.com/74321890/203660418-1ba84ed7-a534-48b1-9335-eb8598f4ce4e.png">
 </details>
 	
-### Aprendizados Efetivos
+### Hard Skills
 <p align="justify">
   
 No desenvolvimento dos serviços do DescontOn, aprendi mais sobre desenvolvimento web. Foi a primeira vez na faculdade em que trabalhei de fato com uma aplicação 
@@ -504,7 +515,16 @@ Além disso, foi minha primeira vez atuando no papel de Scrum Master e colocando
 - Utilização da metodologia ágil e atuação como SM: sei fazer com autonomia.
 - Utilização de DTO em códigos: sei fazer com autonomia.
 
-<br/>
+### Soft Skills
+
+Esse foi o primeiro projeto que trabalhei como Scrum Master, então tive que me dedicar mais aos estudos sobre metodologia ágil, o que também me ajudou no desenvolvimento de:
+
+- Atitude positiva;
+- Motivação;
+- Organização e gestão do tempo;
+- Comunicação;
+- Princípios éticos.
+
 
 # Projeto 4: 2º semestre de 2022
 ## Empresa parceira:
@@ -748,7 +768,7 @@ Minhas áreas de atuação:
 - Orçamento: front-end e back-end
 - Mapeamento gráfico: front-end
 
-### Aprendizados Efetivos
+### Hard Skills
 Durante o projeto participei de um Hackathon organizado pela empresa Soluções Sophia, junto com os outros integrantes do grupo Dolphin Database.
 Nesse evento, unimos tecnologia e educação onde nosso objetivo foi aperfeiçoar as ideias e implementá-las em um aplicativo feito para professores, pais e alunos. Meu grupo ficou responsável pelo tópico de frequência de alunos, então desenvolvi um protótipo no figma e a aplicação front-end utilizando o VueJS.
 
@@ -757,6 +777,17 @@ Como aluna destaque, fui contratada como estagiária na Soluções Sophia, onde 
 - Desenvolvimento de serviços CRUD: sei fazer com autonomia.
 - Desenvolvimento utilizando VueJS: sei fazer com autonomia.
 - Utilização de OracleCloud: sei fazer com autonomia.
+
+### Soft Skills
+
+Nesse projeto também fui Scrum Master, porém já com uma bagagem de estudos do projeto passado, pude aplicar e melhorar técnicas para mais agilidade no desenvolvimento.
+
+- Senso de liderança;
+- Resolução de conflitos;
+- Proatividade;
+- Comprometimento;
+- Motivação;
+- Gestão.
 
 # Projeto 5 - 2º semestre de 2023
 ## Empresa parceira:
