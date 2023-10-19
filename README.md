@@ -1067,6 +1067,7 @@ Abaixo mostro alguns exemplos do desenvolvimento do front-end em VueJS.
 <details><summary>Tela - Home</summary></summary>
 <p align="justify">
 
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/3e282808-f684-4e46-917a-92a2a93c4bf6" />
 
 </details>
 
