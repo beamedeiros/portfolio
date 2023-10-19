@@ -192,7 +192,7 @@ No mais, temos os pontos específicos abaixo:
 
 ### Soft Skills
 
-Como foi um projeto em grupo que demandou conhecimentos específicos e um grupo com pessoas que conhecia há pouco tempo, desenvolvi muito o trabalho em equipe e a confiança como soft skill.
+Como foi um projeto em grupo que demandou conhecimentos específicos e um grupo com pessoas que conhecia há pouco tempo, desenvolvi muito o **trabalho em equipe** e a **confiança** no trabalho e desenvolvimento de outros integrantes.
 
 # Projeto 2: 2º semestre de 2021
 
@@ -316,13 +316,7 @@ Além disso, foi quando coloquei em prática as aulas de banco de dados e utiliz
 
 ### Soft Skills
 
-Esse projeto foi o primeiro com que tivemos contato com clientes e empresas reais, o que possibilitou ainda mais o aprimoramento de habilidades sociais.
-
-Sendo elas:
-
-- Capacidade de trabalhar sob pressão;
-- Comunicação;
-- Trabalho em equipe.
+Este projeto, nosso primeiro contato com clientes reais, aprimorou nossas **habilidades sociais**. Desenvolvemos a capacidade de **trabalhar sob pressão**, melhorar a **comunicação interna e com os clientes**, e fortalecer o **trabalho em equipe** para atender às expectativas e metas do projeto. Isso nos preparou para os projetos futuros.
 
 # Projeto 3: 1º semestre de 2022
 
@@ -517,13 +511,7 @@ Além disso, foi minha primeira vez atuando no papel de Scrum Master e colocando
 
 ### Soft Skills
 
-Esse foi o primeiro projeto que trabalhei como Scrum Master, então tive que me dedicar mais aos estudos sobre metodologia ágil, o que também me ajudou no desenvolvimento de:
-
-- Atitude positiva;
-- Motivação;
-- Organização e gestão do tempo;
-- Comunicação;
-- Princípios éticos.
+Ao assumir o papel de Scrum Master em meu primeiro projeto, fui desafiada a aprimorar várias soft skills. A necessidade de compreender e aplicar metodologias ágeis impulsionou uma **atitude positiva e resiliência** para lidar com mudanças e incertezas. A **motivação** tornou-se essencial para inspirar a equipe. A **gestão do tempo e organização** eram necessárias para equilibrar tarefas e responsabilidades. **Comunicação** eficaz era vital para facilitar reuniões e mediar conflitos. Além disso, o papel reforçou meus **princípios éticos**, enfatizando a integridade e a responsabilidade. Essas habilidades contribuíram significativamente para o sucesso do projeto e meu próprio desenvolvimento profissional.
 
 
 # Projeto 4: 2º semestre de 2022
@@ -780,14 +768,9 @@ Como aluna destaque, fui contratada como estagiária na Soluções Sophia, onde 
 
 ### Soft Skills
 
-Nesse projeto também fui Scrum Master, porém já com uma bagagem de estudos do projeto passado, pude aplicar e melhorar técnicas para mais agilidade no desenvolvimento.
+Neste projeto, atuando novamente como Scrum Master e aplicando experiências anteriores, desenvolvi e aprimorei habilidades para promover agilidade no desenvolvimento.
 
-- Senso de liderança;
-- Resolução de conflitos;
-- Proatividade;
-- Comprometimento;
-- Motivação;
-- Gestão.
+Ganhei um **senso de liderança**, sendo capaz de liderar a equipe na implementação de práticas ágeis. A **resolução de conflitos** se tornou uma competência fundamental para manter um ambiente de trabalho harmonioso. Minha **proatividade** e **comprometimento** impulsionaram o progresso do projeto, enquanto a **motivação** ajudou a manter a equipe focada. A **gestão** eficaz foi crucial para coordenar todas as atividades, resultando em um projeto mais ágil e bem-sucedido. Essas habilidades fortaleceram minha atuação como Scrum Master e como fruto do nosso desenvolvimento fomos chamados para trabalhar na empresa parceira.
 
 # Projeto 5 - 2º semestre de 2023
 ## Empresa parceira:
