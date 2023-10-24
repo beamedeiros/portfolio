@@ -1102,12 +1102,93 @@ Nessa tela também conseguimos configurar:
 </template>
 ```
 
->Na parte de estilização utilizamos o tailwind que faz isso de forma inline, ou seja, utilizando class e passando seus atributos na própria linha, evitando utilizar o "style" que é nativo do Vue, garante que essas regras de estilo sejam aplicadas somente aos elementos dentro do escopo do componente atual, evitando que sejam afetados por estilos definidos em outros componentes ou estilos globais da aplicação.
+>Na parte de estilização utilizamos o tailwind que faz isso de forma inline, ou seja, utilizando class e passando seus atributos na própria linha, evitando utilizar o "style" que é nativo do Vue, garante que essas regras de estilo sejam aplicadas somente aos elementos dentro do escopo do componente atual, evitando que sejam afetados por estilos definidos em outros componentes.
 </details>
 
-<details><summary>Tela - Home</summary></summary>
+<details><summary>Tela - Transferências</summary></summary>
 <p align="justify">
 
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/67b0da7f-7505-4e37-8378-70977a547047" />
+
+>Essa tela inicial serve para mostrar ao usuário que ele precisa adicionar uma transferência clicando no botão.
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/089731e8-244d-48c3-9b7a-95f8e285a3dd" />
+
+>Ao clicar aparece esse collapse onde ele define **de** qual drive ele quer passar os arquivos e **para** qual ele quer passar. Podendo assim escolher os arquivos.
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/f9d973c1-93b3-4368-8012-6550085f5002" />
+
+>Na escolha de arquivos, um modal é aberto fazendo com que o usuário tenha ciência das escolhas do drive.
+
+```
+<template>
+  <div class="flex items-center justify-around mb-8 mt-4">
+    <div>
+      <p
+        class="text-lg"
+        :class="{ 'text-green-500 text-lg font-extrabold': step === 0 }"
+      >
+        {{ origin }}
+      </p>
+    </div>
+    <ChevronRightIcon class="h-5 w-5" />
+    <div>
+      <p 
+        class="text-lg"
+        :class="{ 'text-green-500 text-lg font-extrabold': step === 1 }"
+    >
+        {{ destiny }}
+      </p>
+    </div>
+  </div>
+```
+
+>Temos um campo de busca, onde o usuário consegue filtrar os arquivos que ele quer enviar, facilitando a sua procura.
+
+```
+<div class="m-3 flex justify-end">
+	<div class="relative search-field">
+		<MagnifyingGlassIcon class="absolute z-10 w-4 h-4 left-2 top-[10px] text-gray-600" />
+		<input
+		  v-model="search"
+		  type="text"
+		  class="border-2 pl-8 py-1 rounded-md"
+		  placeholder="Buscar"
+		  @input="onSearch()"
+		>
+	</div>
+</div>
+```
+
+>Utilizamos uma tabela onde é possível selecionar os arquivos e prosseguir para a próxima página, onde ele consegue escolher para qual pasta ele vai enviar.
+
+```
+	<table class="w-[530px] flex flex-col">
+	      <thead>
+		<tr class="flex border-b-2 border-black">
+		  <th class="mr-56">
+		    Nome do arquivo
+		  </th>
+		</tr>
+	      </thead>
+	      <tbody class="block h-[300px] overflow-auto">
+		<tr
+		  v-for="d in originData"
+		  :key="d.id"
+		>
+		  <td>
+		    <input
+		      v-model="selectedOrigin"
+		      type="radio"
+		      :value="d.id"
+		    >
+		  </td>
+		  <td> {{ d.name }}</td>
+		</tr>
+	      </tbody>
+	</table>
+</template>
+```
 
 </details>
 
