@@ -1192,6 +1192,109 @@ Nessa tela também conseguimos configurar:
 
 </details>
 
+<details><summary>Tela - Histórico de Transferências</summary></summary>
+<p align="justify">
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/6e2b58d3-275e-4031-b840-03e2c17748bc" />
+
+>Assim que as transferências acabam de acontecer, conseguimos ver o status "em andamento", "concluído" e "erro". Além de receber uma notificação referente àquela transferência, como mostro no código e na imagem abaixo.
+
+```
+export default async function notify(data) {
+    if (!("Notification" in window)) {
+        console.warn("Este navegador não suporta notificações do HTML5");
+        return;
+    }
+
+    var permission = await Notification.requestPermission()
+    if (permission === "granted") {
+        let icon
+        switch (data.icon) {
+            case ("Erro"):
+                icon = Error
+                break;
+            case ("Concluido"):
+                icon = Complete
+                break;
+            case ("Em andamento"):
+                icon = Warning
+        }
+        new Notification(data.title, {
+            body: data.text,
+            icon: icon
+        })
+    }
+}
+```
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/ffe27f98-a302-44ff-a10d-75bf8cc6075d" />
+
+>Clicando em ver detalhes, podemos ver informações como nome dos arquivos, tamanho, tempo de transferência, data e hora do início das transferências e se deu erro ou foi concluída com sucesso!
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/853c4059-8cc9-4346-8dc5-175080c90d29" />
+
+>Abaixo encontra-se o trecho que mostra como foi montada a tabela com as informações citadas acima.
+
+```
+<table class="min-w-full divide-y divide-gray-200">
+	<thead>
+	    <tr>
+		<th
+		    scope="col"
+		    class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider"
+		>
+		    Arquivo
+		</th>
+		<th
+		    scope="col"
+		    class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider"
+		>
+		    Tamanho
+		</th>
+		<th
+		    scope="col"
+		    class="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider"
+		>
+		    Tempo
+		</th>
+	    </tr>
+	</thead>
+	<tbody class="bg-white divide-y divide-gray-200">
+	    <tr v-for="file in this.transaction.file" :key="file">
+		<td class="px-6 py-4 whitespace-nowrap">
+		    <div class="flex items-center">
+			<div class="ml-4">
+			    <div class="text-sm font-medium text-gray-900">
+				{{ file.name }}
+			    </div>
+			</div>
+		    </div>
+		</td>
+		<td class="px-6 py-4 whitespace-nowrap">
+		    <div class="flex items-center">
+			<div class="ml-4">
+			    <div class="text-sm font-medium text-gray-900">
+				{{ this.convertBytesSizeToHumanReadable(file.size) }}
+			    </div>
+			</div>
+		    </div>
+		</td>
+		<td class="px-6 py-4 whitespace-nowrap">
+		    <div class="flex items-center">
+			<div class="ml-4">
+			    <div class="text-sm font-medium text-gray-900">
+				{{ file.time }}
+			    </div>
+			</div>
+		    </div>
+		</td>
+	    </tr>
+	</tbody>
+</table>
+```
+
+</details>
+
 ## Aprendizados Efetivos HS
 - Desenvolvimento de serviços CRUD: Sei fazer com autonomia; 
 - Desenvolvimento utilizando Typescript: Sei fazer com autonomia; 
