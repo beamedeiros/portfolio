@@ -1295,6 +1295,20 @@ export default async function notify(data) {
 
 </details>
 
+A seguir, mostro como foi feita a autenticação do [Google Drive](https://developers.google.com/drive/api/guides/about-sdk?hl=pt_BR).
+
+<details><summary>Autenticação</summary></summary>
+<p align="justify">
+
+<details><summary>Front-end</summary></summary>
+<p align="justify">
+
+
+
+</details>
+
+</details>
+
 ## Aprendizados Efetivos HS
 - Desenvolvimento de serviços CRUD: Sei fazer com autonomia; 
 - Desenvolvimento utilizando Typescript: Sei fazer com autonomia; 
