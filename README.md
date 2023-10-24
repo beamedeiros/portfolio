@@ -1062,15 +1062,54 @@ A "StatefulSet" has been defined in Kubernetes to run a MySQL database instance.
 ### Contribuições pessoais
 Neste projeto, minhas principais funções foram o desenvolvimento das telas no front-end e sua prototipação, autenticação utilizando Google, testes unitários e rotas no back-end, além de ser PO, mantendo um contato contínuo com o cliente afim de praticar comunicação.
 
-Abaixo mostro alguns exemplos do desenvolvimento do front-end em VueJS.
+Abaixo mostro alguns exemplos do desenvolvimento do **front-end** em VueJS.
 
 <details><summary>Tela - Home</summary></summary>
 <p align="justify">
 
+Implementamos o login utilizando 2 ferramentas: Google para acessar os arquivos do drive e S3 para acessar os arquivos do bucket.
+
 <img src="https://github.com/beamedeiros/portfolio/assets/74321890/3e282808-f684-4e46-917a-92a2a93c4bf6" />
 
+Nessa tela também conseguimos configurar:
+
+- Tempo de pesquisa recorrente;
+- Quantidade de banda utilizada;
+- Tempo utilizado durante as transferências.
+
+>Esse código faz parte de um formulário que permite configurar o tempo de pesquisa recorrente. Ele exibe campos de entrada de tempo e uma lista suspensa com opções de segundo, minuto e hora, para o usuário selecionar. Os valores escolhidos ou inseridos são vinculados a variáveis para uso no aplicativo.
+
+```
+<template>
+    <div class="flex flex-col gap-8">
+      <div class="rounded-md border-slate-200 border shadow ">
+        <div class="grid-container items-center">
+          <p>
+            Tempo da pesquisa recorrente
+          </p>
+          <span class="tracinho" />
+          <input v-model="config.JOB_TIME" class="bg-transparent border-b-2" type="number">
+          <select v-model="selectedTimeSearch" class="bg-transparent border-2 border-slate-200 rounded-md px-4">
+            <option value="" disabled>
+              Selecione uma opção
+            </option>
+            <option v-for="time in times" :key="time.id">
+              {{ time.tempo }}
+            </option>
+          </select>
+        </div>
+      </div>
+</template>
+```
+
+>Na parte de estilização utilizamos o tailwind que faz isso de forma inline, ou seja, utilizando class e passando seus atributos na própria linha, evitando utilizar o "style" que é nativo do Vue, garante que essas regras de estilo sejam aplicadas somente aos elementos dentro do escopo do componente atual, evitando que sejam afetados por estilos definidos em outros componentes ou estilos globais da aplicação.
 </details>
 
+<details><summary>Tela - Home</summary></summary>
+<p align="justify">
+
+
+</details>
 
 ## Aprendizados Efetivos HS
 - Desenvolvimento de serviços CRUD: Sei fazer com autonomia; 
