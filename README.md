@@ -1407,10 +1407,24 @@ def list_folders():
         return make_response(jsonify({"error": f"list folder error:{e}"}, 500))
 
 ```
-
-
+</details>
 </details>
 
+<details><summary>Testes unitários</summary></summary>
+<p align="justify">
+
+>Fizemos dois tipos de testes unitários, são eles:
+
+<details><summary>Banco de dados</summary></summary>
+<p align="justify">
+
+>Esse é um teste unitário escrito usando a biblioteca pytest para testar um modelo chamado File em um aplicativo que usa SQLAlchemy como ORM (Object-Relational Mapping) para interagir com um banco de dados SQLite em memória. Vou explicar o teste passo a passo:
+
+```
+a
+```
+
+</details>
 </details>
 
 ## Aprendizados Efetivos HS
