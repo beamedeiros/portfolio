@@ -1418,12 +1418,68 @@ def list_folders():
 <details><summary>Banco de dados</summary></summary>
 <p align="justify">
 
->Esse é um teste unitário escrito usando a biblioteca pytest para testar um modelo chamado File em um aplicativo que usa SQLAlchemy como ORM (Object-Relational Mapping) para interagir com um banco de dados SQLite em memória. Vou explicar o teste passo a passo:
+>Esse é um teste unitário escrito usando a biblioteca pytest para testar um modelo chamado File em um aplicativo que usa SQLAlchemy como ORM (Object-Relational Mapping) para interagir com um banco de dados SQLite em memória.
 
 ```
-a
+@pytest.fixture
+def db_session():
+    engine = create_engine("sqlite:///:memory:")
+    db.metadata.create_all(engine)
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    yield session
+    session.rollback()
+
+
+def test_file_model(db_session):
+    # Create a new file
+    file = File()
+    file.name = "teste"
+    file.size = 3.14
+    file.time = time(hour=12, minute=12, second=12)
+
+    # Add the file to the session and commit
+    db_session.add(file)
+    db_session.commit()
+
+    # Query the file from the database
+    result = db_session.query(File).filter_by(name="teste").first()
+
+    # Check the result
+    assert result is not None
+    assert result.id == 1
 ```
 
+</details>
+
+<details><summary>S3</summary></summary>
+<p align="justify">
+
+>Este é um exemplo de teste unitário escrito usando a biblioteca pytest e a funcionalidade de mock do Python. Esses testes são projetados para verificar o comportamento da classe s3Service ao listar arquivos e pastas em um serviço AWS S3 simulado, bem como para garantir que a API responda adequadamente quando solicitada com um token de autenticação válido. Eles são uma parte importante do processo de garantir que o aplicativo funcione corretamente em relação ao AWS S3 e à autenticação.
+
+```
+@pytest.fixture(scope="session")
+def init_database():
+    engine = create_engine("sqlite:///:memory:")
+    db.metadata.create_all(engine)
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    yield session
+    session.rollback()
+
+
+def test_files_by_folder():
+    boto3_client = MagicMock(name="boto3.client")
+    boto3_client.list_objects.return_value = {"Contents": ["folder", "file1", "file2"]}
+    with patch("boto3.client", return_value=boto3_client):
+        service = s3Service("token token token token")
+        result = service.files_by_folder(None)
+    assert result == 2
+
+```
+
+>Em resumo, esse teste cria um ambiente isolado de banco de dados em memória, simula a interação com o AWS S3 por meio de um cliente fictício e verifica se a função files_by_folder retorna o resultado esperado quando chamada com esse ambiente simulado. O uso de uma sessão de banco de dados em memória permite que os testes sejam independentes e não afetem um banco de dados de produção.
+ 
 </details>
 </details>
 
