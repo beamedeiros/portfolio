@@ -769,7 +769,7 @@ Como aluna destaque, fui contratada como estagiária na Soluções Sophia, onde 
 ### Soft Skills
 
 Neste projeto, atuando novamente como Scrum Master e aplicando experiências anteriores, desenvolvi e aprimorei habilidades para promover agilidade no desenvolvimento.
-
+	
 Ganhei um **senso de liderança**, sendo capaz de liderar a equipe na implementação de práticas ágeis. A **resolução de conflitos** se tornou uma competência fundamental para manter um ambiente de trabalho harmonioso. Minha **proatividade** e **comprometimento** impulsionaram o progresso do projeto, enquanto a **motivação** ajudou a manter a equipe focada. A **gestão** eficaz foi crucial para coordenar todas as atividades, resultando em um projeto mais ágil e bem-sucedido. Essas habilidades fortaleceram minha atuação como Scrum Master e como fruto do nosso desenvolvimento fomos chamados para trabalhar na empresa parceira.
 
 # Projeto 5 - 2º semestre de 2023
@@ -1103,6 +1103,36 @@ Nessa tela também conseguimos configurar:
 ```
 
 >Na parte de estilização utilizamos o tailwind que faz isso de forma inline, ou seja, utilizando class e passando seus atributos na própria linha, evitando utilizar o "style" que é nativo do Vue, garante que essas regras de estilo sejam aplicadas somente aos elementos dentro do escopo do componente atual, evitando que sejam afetados por estilos definidos em outros componentes.
+
+```
+ setConfig() {
+      let tempoPesquisa = 0;
+      if (this.selectedTimeSearch == 'segundos') {
+        tempoPesquisa = this.config.JOB_TIME
+      } else if (this.selectedTimeSearch == 'minutos') {
+        tempoPesquisa = this.config.JOB_TIME / 60
+      } else if (this.selectedTimeSearch == 'horas') {
+        tempoPesquisa = this.config.JOB_TIME / 3600
+      }
+
+      let tempoTransfer = 0
+      if (this.selectedTimeTransfer == 'segundos') {
+        tempoTransfer = this.config.TRANSFER_TIME
+      } else if (this.selectedTimeTransfer == 'minutos') {
+        tempoTransfer = this.config.TRANSFER_TIME / 60
+      } else if (this.selectedTimeTransfer == 'horas') {
+        tempoTransfer = this.config.TRANSFER_TIME / 3600
+      }
+
+      alert('Configurações aplicadas com sucesso!')
+
+      api.post("/job", { "job": tempoPesquisa, "band": this.config.BAND, "transfer": tempoTransfer })
+      localStorage.setItem('selectedTimeSearch', this.selectedTimeSearch)
+      localStorage.setItem('selectedTimeTransfer', this.selectedTimeTransfer)
+    }
+```
+
+>A função acima é usada para configurar e enviar as preferências de tempo de pesquisa e transferência para um servidor, ao mesmo tempo em que as armazena localmente no navegador do usuário para futuras referências. O cálculo dos valores de tempo é baseado nas escolhas feitas pelo usuário e no uso de variáveis de configuração existentes (this.config.JOB_TIME e this.config.TRANSFER_TIME).
 </details>
 
 <details><summary>Tela - Transferências</summary></summary>
@@ -1295,7 +1325,7 @@ export default async function notify(data) {
 
 </details>
 
-A seguir, mostro como foi feita a autenticação do [Google Drive](https://developers.google.com/drive/api/guides/about-sdk?hl=pt_BR).
+A seguir, mostro como foi feita a autenticação com o [Google Drive](https://developers.google.com/drive/api/guides/about-sdk?hl=pt_BR).
 
 <details><summary>Autenticação</summary></summary>
 <p align="justify">
@@ -1303,7 +1333,7 @@ A seguir, mostro como foi feita a autenticação do [Google Drive](https://devel
 <details><summary>Front-end</summary></summary>
 <p align="justify">
 
->Esse código é um componente Vue que exibe um botão com um cartão estilizado e permite aos usuários autenticarem-se com o Google Drive quando o botão é clicado. A autenticação é realizada usando o SDK do Google e os tokens resultantes são armazenados na store, nesse caso utilizamos o Vuex.
+>Esse código é um componente Vue que exibe um botão com um cartão estilizado e permite aos usuários autenticarem-se com o Google Drive quando o botão é clicado. 
 
 ```
 <template>
@@ -1314,23 +1344,12 @@ A seguir, mostro como foi feita a autenticação do [Google Drive](https://devel
         </card-component>
     </button>
 </template>
+```
 
-<script>
-import { googleSdkLoaded } from 'vue3-google-login';
-import axios from 'axios';
-import CardComponent from '@/components/cards/CardComponent.vue'
+>A autenticação é realizada usando o SDK do Google e os tokens resultantes são armazenados na store, nesse caso utilizamos o Vuex.
 
-export default {
-    name: 'GoogleLogin',
-    components: {
-        CardComponent,
-    },
-    data() {
-        return {
-            auth: null
-        }
-    },
-    methods: {
+```
+methods: {
         login() {
             googleSdkLoaded((google) => {
                 google.accounts.oauth2.initCodeClient({
@@ -1355,15 +1374,39 @@ export default {
             })
         }
     }
-}
-</script>
 ```
-
 </details>
 
 <details><summary>Back-end</summary></summary>
 <p align="justify">
 
+>Nosso back-end conta com funções de download e upload "automático", ou seja, sem interação com o usuário, ele executa essas funções, porém abaixo mostro o código responsável por listar pastas no Google Drive usando a API do Google Drive e retornar os resultados em formato JSON como resposta a uma solicitação HTTP GET. Ele lida com a autenticação usando um token no cabeçalho da solicitação e é projetado para lidar com várias páginas de resultados, se necessário.
+
+```
+@drivebp.route("/list/folder", strict_slashes=False)
+def list_folders():
+    try:
+        token = request.headers.get("token")
+        url = "https://www.googleapis.com/drive/v3/files"
+        headers = {"Authorization": f"Bearer {token}"}
+        params = {
+            "q": "mimeType='application/vnd.google-apps.folder' and trashed=false",
+            "fields": "nextPageToken, files(id, name)",
+            "pageSize": 1000,
+        }
+        folders = []
+        next_page_token = True
+        while next_page_token:
+            response = requests.get(url, headers=headers, params=params)
+            json_response = response.json()
+            folders.extend(json_response["files"])
+            next_page_token = json_response.get("nextPageToken", None)
+            params["pageToken"] = next_page_token
+        return make_response(jsonify({"result": folders}), 200)
+    except Exception as e:
+        return make_response(jsonify({"error": f"list folder error:{e}"}, 500))
+
+```
 
 
 </details>
