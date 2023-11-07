@@ -1483,12 +1483,21 @@ def test_files_by_folder():
 </details>
 </details>
 
-## Aprendizados Efetivos HS
-- Desenvolvimento de serviços CRUD: Sei fazer com autonomia; 
-- Desenvolvimento utilizando Typescript: Sei fazer com autonomia; 
-- Utilização de ORM's com banco relacional: Sei fazer com autonomia; 
-- Utilização de banco NoSQL: Sei fazer com autonomia;
-- Comunicação em tempo real entre cliente e servidor com web socket: Sei fazer com autonomia.
+### Hard Skills
+
+Neste projeto obtive meu primeiro contato com api do Google e DevOps. Foi muito importante também para o meu desenvolvimento utilizando a linguagem Python, visto que a última e única utilização desta foi no primeiro semestre.
+
+Além disso, utilizar DevOps pela primeira vez foi ótimo, pois permite a colaboração contínua entre desenvolvedores e operadores, acelerando a entrega de software, melhorando a qualidade e a confiabilidade das aplicações, e promovendo uma cultura de automação e feedback constante, que resulta em maior eficiência e satisfação dos clientes.
+
+No mais, temos os pontos específicos abaixo:
+
+- Testes unitários: sei fazer com autonomia.
+- Desenvolvimento de componentes, design e demais trabalhos necessários no front-end: sei fazer com autonomia.
+- Desenvolvimento de scripts em Python: sei fazer com autonomia.
+
+### Soft Skills
+
+Como foi um projeto em grupo que demandou conhecimentos específicos e um grupo com pessoas que conhecia há pouco tempo, desenvolvi muito o **trabalho em equipe** e a **confiança** no trabalho e desenvolvimento de outros integrantes.
 
 ## Contatos:
 
