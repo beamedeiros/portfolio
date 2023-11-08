@@ -36,7 +36,6 @@ Abaixo todos estes projetos serão descritos, detalhando o problema, solução p
 
 # Projeto 1: 1º Semestre de 2021
 
-
 ### Parceiro Acadêmico
 
 Fatec Prof. Jessen Vidal (proposta realizada pelo docente responsável pela disciplina que ordenou o projeto)
@@ -513,9 +512,10 @@ Além disso, foi minha primeira vez atuando no papel de Scrum Master e colocando
 
 Ao assumir o papel de Scrum Master em meu primeiro projeto, fui desafiada a aprimorar várias soft skills. A necessidade de compreender e aplicar metodologias ágeis impulsionou uma **atitude positiva e resiliência** para lidar com mudanças e incertezas. A **motivação** tornou-se essencial para inspirar a equipe. A **gestão do tempo e organização** eram necessárias para equilibrar tarefas e responsabilidades. **Comunicação** eficaz era vital para facilitar reuniões e mediar conflitos. Além disso, o papel reforçou meus **princípios éticos**, enfatizando a integridade e a responsabilidade. Essas habilidades contribuíram significativamente para o sucesso do projeto e meu próprio desenvolvimento profissional.
 
-
 # Projeto 4: 2º semestre de 2022
+
 ## Empresa parceira:
+
 Subiter
 
 <img src="https://user-images.githubusercontent.com/74321890/200832569-795e2fa6-0fc6-4b1e-8547-d7b2abf82c0b.jpg" height="300"/>
@@ -773,7 +773,9 @@ Neste projeto, atuando novamente como Scrum Master e aplicando experiências ant
 Ganhei um **senso de liderança**, sendo capaz de liderar a equipe na implementação de práticas ágeis. A **resolução de conflitos** se tornou uma competência fundamental para manter um ambiente de trabalho harmonioso. Minha **proatividade** e **comprometimento** impulsionaram o progresso do projeto, enquanto a **motivação** ajudou a manter a equipe focada. A **gestão** eficaz foi crucial para coordenar todas as atividades, resultando em um projeto mais ágil e bem-sucedido. Essas habilidades fortaleceram minha atuação como Scrum Master e como fruto do nosso desenvolvimento fomos chamados para trabalhar na empresa parceira.
 
 # Projeto 5 - 2º semestre de 2023
+
 ## Empresa parceira:
+
 MidAll<br/>
 ![midall](https://user-images.githubusercontent.com/74321890/191144569-593506c4-b02e-41bf-830d-9f6e88a57278.jpeg)
 
@@ -1497,7 +1499,19 @@ No mais, temos os pontos específicos abaixo:
 
 ### Soft Skills
 
-Como foi um projeto em grupo que demandou conhecimentos específicos e um grupo com pessoas que conhecia há pouco tempo, desenvolvi muito o **trabalho em equipe** e a **confiança** no trabalho e desenvolvimento de outros integrantes.
+O PO deve ser capaz de **comunicar** de maneira clara e eficaz tanto com a equipe de desenvolvimento quanto com a empresa. Fazendo assim com que **habilidades de negociação** fossem necessárias já que muitas vezes precisa negociar prioridades, recursos e requisitos com a equipe de desenvolvimento e a empresa, garantindo que o produto atenda às necessidades do cliente. A **flexibilidade e adaptação** é essencial à medida que os requisitos e prioridades mudam, e o PO deve ser flexível e capaz de se adaptar às mudanças de forma eficiente. Além da **liderança** como SM em outras sprints, ajudou bastante como PO, pois há o esforço para criar um produto de sucesso, o que requer habilidades de liderança para motivar a equipe e manter todos alinhados com os objetivos.
+
+# Projeto 6: 2º Semestre de 2023
+
+### Parceiro Acadêmico
+
+Visiona
+
+![image](https://user-images.githubusercontent.com/74321890/221617740-afbc3809-af92-43e8-bc11-698eeffb4bf4.png)
+
+A Fatec é uma Faculdade Pública Estadual e todos os cursos oferecidos são gratuitos.
+
+### Visão do Projeto
 
 ## Contatos:
 
