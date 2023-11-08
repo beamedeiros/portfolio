@@ -1507,7 +1507,9 @@ O PO deve ser capaz de **comunicar** de maneira clara e eficaz tanto com a equip
 
 Visiona
 
-![image](https://user-images.githubusercontent.com/74321890/221617740-afbc3809-af92-43e8-bc11-698eeffb4bf4.png)
+<br/>
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/590f7cea-060d-4216-ad21-c56760dd678c" width=350px/>
 
 A Visiona Tecnologia Espacial é uma joint-venture entre a Embraer Defesa & Segurança e a Telebras, voltada para a integração de sistemas espaciais.
 
