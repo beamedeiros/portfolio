@@ -1521,6 +1521,24 @@ O POP é uma plataforma de monitoramento das atividades agropecuárias cadastrad
 
 Link do repositório do projeto: https://github.com/DolphinDatabase/POP
 
+### Tecnologias adotadas na solução
+
+O back-end foi feito em Python com Fastapi.
+
+<details><summary>FastAPI</summary>
+<p align="justify">
+
+>FastAPI é um framework web rápido (como o nome sugere) e fácil de usar para a criação de APIs em Python. Ele foi projetado para ser fácil de aprender e usar, enquanto fornece alto desempenho e suporte automático para documentação interativa.
+
+No caso do nosso projeto criamos as seguintes funcionalidades:
+- Autenticação com JWT;
+- CRUD de usuário;
+- CRUD de termos;
+- GET de informações referente as glebas e suas respectivas localizações;
+- GET de informações referentes a predição NDVI.
+  
+</details>
+
 ## Contatos:
 
 - [LinkedIn;](https://www.linkedin.com/in/bea-medeiros/)
