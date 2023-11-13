@@ -1571,6 +1571,10 @@ A Composition API é uma característica do Vue.js 3 que oferece uma nova aborda
 
 </details>
 
+### Contribuições pessoais
+
+
+
 ## Contatos:
 
 - [LinkedIn;](https://www.linkedin.com/in/bea-medeiros/)
