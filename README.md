@@ -1539,6 +1539,38 @@ No caso do nosso projeto criamos as seguintes funcionalidades:
   
 </details>
 
+<details><summary>Pandas</summary>
+<p align="justify">
+
+>O pandas é uma biblioteca em Python para manipulação eficiente e análise de dados tabulares, oferecendo estruturas como DataFrames. Amplamente usada em ciência de dados, simplifica tarefas como limpeza, transformação e visualização de dados. Integrando-se facilmente a outras bibliotecas, como NumPy e Matplotlib, o pandas é essencial para análise de dados em Python.
+
+Utilizamos o Pandas para:
+- Tratamento de dados do Proagro;
+- Atualização de dados no banco.
+
+</details>
+
+<details><summary>Postgis</summary>
+<p align="justify">
+
+>O PostGIS é uma extensão geoespacial para o sistema de gerenciamento de banco de dados PostgreSQL. Ele capacita o PostgreSQL a lidar com dados geoespaciais, permitindo armazenar, consultar e analisar informações vinculadas a localizações geográficas. O PostGIS fornece suporte para tipos de dados geométricos e geográficos, além de uma ampla gama de funções espaciais, possibilitando a execução de consultas espaciais complexas. Essa extensão é crucial para projetos que envolvem dados geográficos, como mapeamento, geocodificação e análises espaciais em geral.
+
+Utilizamos o PostGIS, para o armazenamento dos dados do Proagro, visto que contém informações geoespaciais (ex: latitude e longitude), formação de polígonos, entre outros.
+
+</details>
+
+Para o front-end continuamos com o VueJS.
+
+<details><summary>TypeScript</summary>
+<p align="justify">
+
+>TypeScript é uma extensão do JavaScript que adiciona tipagem estática opcional, facilitando a detecção de erros durante o desenvolvimento. Funciona como um superset do JavaScript, sendo transpilado para código JavaScript. Suporta recursos do ECMAScript 6 e oferece ferramentas de desenvolvimento avançadas. É popular no desenvolvimento front-end, especialmente com frameworks como Angular.
+
+Nesse projeto demos continuidade na utilização do VueJS para o desenvolvimento do front-end, porém com **composition api**.
+A Composition API é uma característica do Vue.js 3 que oferece uma nova abordagem para organizar a lógica de componentes de forma mais modular e reutilizável. Quando combinada com TypeScript, ela proporciona benefícios adicionais devido à tipagem estática.
+
+</details>
+
 ## Contatos:
 
 - [LinkedIn;](https://www.linkedin.com/in/bea-medeiros/)
