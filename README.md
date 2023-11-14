@@ -1573,7 +1573,14 @@ A Composition API é uma característica do Vue.js 3 que oferece uma nova aborda
 
 ### Contribuições pessoais
 
+No código, além de trabalhar com o front-end, trabalhei na criação da autenticação com JWT no FastAPI.
+	
+<details><summary>Autenticação </summary>
+<p align="justify">
 
+
+
+</details>
 
 ## Contatos:
 
