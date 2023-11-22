@@ -1571,6 +1571,13 @@ A Composition API é uma característica do Vue.js 3 que oferece uma nova aborda
 
 </details>
 
+<details><summary>Element Plus</summary>
+<p align="justify">
+
+Element Plus é uma biblioteca de componentes Vue.js baseada no Element UI. Ambas são bibliotecas de componentes para o framework Vue.js, que facilitam a criação de interfaces de usuário consistentes e atraentes.
+
+</details>
+
 ### Contribuições pessoais
 
 No código, criei a autenticação com JWT no FastAPI, abaixo mostro alguns exemplos.
@@ -1616,6 +1623,175 @@ def create_access_token(usuario: Usuario) -> Token:
 </details>
 
 </details>
+
+Fiquei responsável pelo front-end da aplicação:
+
+<details><summary>Tela inicial</summary>
+	
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/d4a6f580-6534-4e72-b046-51ca4e67362b">
+
+>Utilizando a biblioteca de componentes Element Plus, aqui está um exemplo de como fizemos o carrossel (carousel) de imagens e textos.
+
+```
+<template>
+  <div>
+    <h2>O que nós oferecemos?</h2>
+    <el-carousel indicator-position="outside">
+      <el-carousel-item>
+        <img src="../../assets/carousel/plant.png" alt="" />
+        <div class="text-content">
+          <h3>Análises detalhadas 🌾</h3>
+          <h4>
+            Nossa tecnologia avançada de análise de imagens fornece insights detalhados sobre o
+            estado de suas plantações, permitindo que você tome medidas proativas para melhorar o
+            rendimento.
+          </h4>
+        </div>
+      </el-carousel-item>
+    </el-carousel>
+  </div>
+</template>
+```
+
+</details>
+
+<details><summary>Cadastro</summary>
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/82b54868-7299-4c0e-8c20-0240629d9b7f" />
+
+>O código abaixo representa um formulário dinâmico que exibe diferentes campos com base nas escolhas do usuário, especificamente se ele é ou não um proprietário.
+
+```
+  <el-form
+    :model="cadastroForm"
+    :rules="rules"
+    class="demo-ruleForm"
+    label-width="120px"
+    label-position="top"
+    status-icon
+    ref="cadastroFormRef"
+    size="default"
+  >
+    <div>
+      <el-form-item prop="nome">
+	<el-input v-model="cadastroForm.nome" placeholder="Nome completo" />
+      </el-form-item>
+      <el-form-item prop="email">
+	<el-input v-model="cadastroForm.email" placeholder="Email" />
+      </el-form-item>
+      <el-form-item prop="senha">
+	<el-input
+	  v-model="cadastroForm.senha"
+	  placeholder="Senha"
+	  type="password"
+	  show-password
+	/>
+      </el-form-item>
+      <div class="checks">
+	<el-checkbox
+	  v-model="cadastroForm.proprietario"
+	  label="É proprietário?"
+	  size="large"
+	  prop="proprietario"
+	/>
+	<el-form-item v-if="cadastroForm.proprietario" prop="doc">
+	  <el-input v-model="cadastroForm.doc" placeholder="CPF" />
+	</el-form-item>
+      </div>
+    </div>
+  </el-form>
+```
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/d223c18a-d93b-40f3-98d0-93dff4c4fd0c" />
+
+>Ao clicar em continuar, aparecerá os termos. O termo varia dependendo da escolha do tipo de usuário, se ele escolher "proprietário" os termos respectivos à esse grupo.
+
+```
+<el-form
+    :model="cadastroTerms"
+    :rules="rulesTerms"
+    class="demo-ruleForm"
+    label-width="120px"
+    label-position="top"
+    status-icon
+    ref="cadastroTermsRef"
+    size="default"
+  >
+    <div class="check-terms" v-for="condicao in cadastroTerms.condicoes" :key="condicao.id">
+      <el-form-item prop="condicoes">
+	<el-checkbox
+	  v-model="condicao.aceite"
+	  :label="condicao.texto"
+	  size="large"
+	  :class="cadastroTerms.condicoes.length > 1 ? 'break-text' : 'break-text-only'"
+	/>
+      </el-form-item>
+    </div>
+    <div class="check-terms">
+      <el-form-item prop="termos">
+	<el-checkbox
+	  v-model="termos.aceite"
+	  label="Li e aceito os Termos de Uso e Política de Privacidade."
+	  size="large"
+	/>
+	<el-icon v-if="!cadastroForm.proprietario" @click="$router.push('/terms')"
+	  ><Connection
+	/></el-icon>
+	<el-icon v-if="cadastroForm.proprietario" @click="$router.push('/terms-owner')"
+	  ><Connection
+	/></el-icon>
+      </el-form-item>
+    </div>
+</el-form>
+```
+</details>
+
+<details><summary>Login</summary>
+
+Caso seu cadastro esteja correto. Você será direcionado à página de Login.
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/e06a99fd-5fc0-40c1-a14a-7963433a4518" />
+
+```
+<el-form :model="login" label-width="120px" label-position="top">
+    <el-form-item>
+      <el-input v-model="login.username" placeholder="Email" />
+    </el-form-item>
+    <el-form-item>
+      <el-input
+	v-model="login.password"
+	placeholder="Senha"
+	type="password"
+	show-password
+      />
+    </el-form-item>
+</el-form>
+```
+
+>Esse código cria um formulário simples de login com campos de nome de usuário (email) e senha, utilizando os componentes fornecidos pelo Element Plus. O estado do formulário é gerenciado pelo objeto login no Vue.js.
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/adf581aa-ec90-4d0a-9cd4-3e433d964404" />
+
+>Caso o usuário já tenha uma conta e os termos forem atualizados, além de receber um alerta por e-mail, ele também é redirecinado para aceitar os novos termos.
+
+</details>
+
+<details><summary>Tela do mapa</summary>
+	
+</details>
+
+<details><summary>Tela do administrador</summary>
+	
+</details>
+
+<details><summary>Termos</summary>
+	
+</details>
+
+Como PO, também fiquei responsável por decidir as regras de LGPD.
+Sendo elas:
+
+
 
 ## Contatos:
 
