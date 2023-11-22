@@ -1573,12 +1573,47 @@ A Composition API é uma característica do Vue.js 3 que oferece uma nova aborda
 
 ### Contribuições pessoais
 
-No código, além de trabalhar com o front-end, trabalhei na criação da autenticação com JWT no FastAPI.
+No código, criei a autenticação com JWT no FastAPI, abaixo mostro alguns exemplos.
 	
 <details><summary>Autenticação </summary>
 <p align="justify">
 
+<details><summary>Controller</summary>
 
+>Esse código define um endpoint de login (/) que espera receber dados de formulário relacionados ao nome de usuário e senha. Em seguida, ele usa um serviço de autenticação (auth_service) para autenticar o usuário e retorna o resultado dessa autenticação como um objeto do tipo Token.
+
+```
+@router.post("/", response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    return auth_service.authenticate_user(form_data.username, form_data.password)
+
+```
+
+</details>
+
+<details><summary>Service</summary>
+
+>Essa função é responsável por gerar um token de acesso JWT com base nas informações do usuário fornecido, usando uma chave secreta e um algoritmo específico, e retorna esse token encapsulado em um objeto Token.
+
+```
+def create_access_token(usuario: Usuario) -> Token:
+    interval_until_expires = timedelta(
+        minutes=configuration.OAUTH_ACCESS_TOKEN_EXPIRE_MINUTES
+    )
+    expire = (datetime.utcnow() + interval_until_expires).timestamp()
+    token_data = TokenData(user=usuario.email, expire=expire)
+
+    jwt_token = jwt.encode(
+        token_data.model_dump(),
+        configuration.OAUTH_SECRET_KEY,
+        algorithm=configuration.OAUTH_ALGORITHM,
+    )
+    return Token(access_token=jwt_token, expire=expire, token_type="bearer", role=usuario.grupo)
+```
+
+</details>
 
 </details>
 
