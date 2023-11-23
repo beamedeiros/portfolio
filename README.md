@@ -1894,6 +1894,33 @@ quill = new Quill('#editor', {
 <div class="terms-page" v-html="termo.texto"></div>
 ```
 
+>Também é possível adicionar parâmetros que os usuários tem opção de aceitar ou não, como por exemplo:
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/15b39d51-6790-4c1a-a42c-df33843d1838" />
+
+```
+<p>Adicione parâmetros para os termos do usuário provedor de dados</p>
+      <div v-for="(condicao, index) in condicoes" :key="condicao.id">
+        <div class="row">
+          <div class="col s2">
+            <div class="param-label">
+              <div>
+                <label>Parâmetro {{ index + 1 }}</label>
+                <p v-if="condicao.servico == 'envio_email'">Serviço para envio de e-mail</p>
+              </div>
+              <el-icon v-if="condicao.id != 0" @click="removeTerm(index)"><Close /></el-icon>
+            </div>
+            <el-input
+              v-model="condicao.texto"
+              placeholder="Escreva um parâmetro de aceite"
+              style="margin-bottom: 16px"
+            />
+          </div>
+        </div>
+      </div>
+```
+
+>Este código Vue.js representa uma lista de parâmetros para os termos do usuário provedor de dados, permitindo a adição e remoção dinâmica de parâmetros.
 </details>
 
 <details><summary>Termos</summary>
