@@ -1777,11 +1777,123 @@ Caso seu cadastro esteja correto. Você será direcionado à página de Login.
 </details>
 
 <details><summary>Tela do mapa</summary>
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/4bccd2c3-26d0-4a3a-b773-282f26e00315" />
+
+Utilizamos a api do Google Maps para adicionar o mapa e suas funcionalidades e configurações. Saiba mais [aqui](https://console.cloud.google.com/apis/library/maps-backend.googleapis.com?hl=pt-BR).
+
+>O círculo ao meio do mapa é draggable, sendo utilizado para pesquisar as glebas sem sobrecarregar a aplicação.
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/014970e3-d2f4-4ab8-bf6b-ed21d71cedb7" />
+
+```
+const circleOptions = {
+      strokeColor: '#000000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillOpacity: 0,
+      map: map,
+      center: currPos.value,
+      radius: initialCircleRadius,
+      draggable: true,
+      zIndex: 0
+    }
+
+    const circle = new google.maps.Circle(circleOptions)
+
+    google.maps.event.addListener(circle, 'drag', () => {
+      continueLoad.value = false
+      map.data.forEach((feature) => {
+        map.data.remove(feature)
+      })
+    })
+    google.maps.event.addListener(circle, 'dragend', () => {
+      const newCenter = circle.getCenter()
+      const newRadius = circle.getRadius()
+      continueLoad.value = true
+
+      if (otherPos.value) {
+        otherPos.value.lat = newCenter.lat()
+        otherPos.value.lng = newCenter.lng()
+      }
+
+      get_glebas(newCenter.lat(), newCenter.lng(), newRadius)
+    })
+```
+
+>O código acima permite ao usuário interagir com um círculo no mapa, ajustando dinamicamente o raio do círculo através de botões de zoom, arrastando o círculo para uma nova posição e atualizando informações no mapa conforme essas interações ocorrem.
 	
 </details>
 
+<details><summary>Informações da gleba</summary>
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/96d80aa8-f3cf-4370-8770-a5a17c60f54e" />
+
+>As informações específicas sobre o plantio agrícola são mostradas dentro de um drawer. Os detalhes são preenchidos dinamicamente com base em uma consulta na API.
+
+```
+<div class="drawer-details" ref="pdfContent">
+        <div>
+          <h6>Plantio</h6>
+          <p>Início plantio: {{ op.inicio_plantio }}</p>
+          <p>Fim plantio: {{ op.fim_plantio }}</p>
+          <p>Início colheita: {{ op.inicio_colheita }}</p>
+          <p>Fim colheita: {{ op.fim_colheita }}</p>
+          <p>Estado: {{ op.estado.descricao }}</p>
+          <p>Município: {{ op.municipio.descricao }}</p>
+        </div>
+        <div class="drawer-content">
+          <h6>Sistema de produção Agrícola</h6>
+          <p>Tipo Solo: {{ op.solo.descricao }}</p>
+          <p>Irrigação: {{ op.irrigacao.descricao }}</p>
+          <p>Tipo cultivo: {{ op.cultivo.descricao }}</p>
+          <p>Grão/Semente: {{ op.grao_semente.descricao }}</p>
+          <p>Ciclo do cultivar: {{ op.ciclo.descricao }}</p>
+        </div>
+        <div>
+          <h6>Empreendimento</h6>
+          <p>Cesta: {{ op.empreendimento.cesta }}</p>
+          <p>Zoneamento: {{ op.empreendimento.zoneamento }}</p>
+          <p>Variedade: {{ op.empreendimento.variedade }}</p>
+          <p>Produto: {{ op.empreendimento.produto }}</p>
+          <p>Modalidade: {{ op.empreendimento.modalidade }}</p>
+          <p>Atividade: {{ op.empreendimento.atividade }}</p>
+          <p>Finalidade: {{ op.empreendimento.finalidade }}</p>
+        </div>
+      </div>
+```
+
+</details>
+
+<details><summary>Série temporal</summary>
+
+</details>
+
 <details><summary>Tela do administrador</summary>
-	
+O administrador tem 2 grupos para lançar os termos, sendo eles os proprietários ou usuários normais.
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/d2e91b9b-d2d3-4a86-b18a-81e2ef608515" />
+
+>Utilizamos a biblioteca quill para os editores de texto, são comumente usados em aplicações web que requerem a entrada de conteúdo formatado, como blogs, sistemas de gerenciamento de conteúdo (CMS), plataformas de colaboração online e muito mais.
+
+```
+quill = new Quill('#editor', {
+    theme: 'snow',
+    placeholder: 'Digite os termos de uso.'
+  })
+
+  quill.on('text-change', () => {
+    editorContent.value = quill.root.innerHTML
+  })
+
+```
+
+>Esse código configura um editor Quill em uma página web, define um texto de espaço reservado e, sempre que o texto no editor é alterado, atualiza um elemento de conteúdo com o conteúdo formatado do editor Quill. O texto é salvo em tags HTML e assim é possível disponibilizar ele formatado em uma página web.
+
+```
+<div class="terms-page" v-html="termo.texto"></div>
+```
+
 </details>
 
 <details><summary>Termos</summary>
