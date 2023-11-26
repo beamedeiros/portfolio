@@ -2062,8 +2062,41 @@ quill = new Quill('#editor', {
 
 Como PO, também fiquei responsável por decidir as regras de LGPD.
 Sendo elas:
+- Backup do banco de dados;
+- Aceite de termos da aplicação;
+- Edição e exclusão de dados do usuário.
 
+### Hard Skills
 
+Ao longo de minha jornada profissional, obtive uma sólida base de hard skills que moldaram minha capacidade de conceber, desenvolver e aprimorar aplicações web de maneira abrangente. Dentre essas habilidades, destaco meu profundo envolvimento com a API do Google Maps, a implementação de autenticação JWT no framework FastAPI, a criação integral do frontend da aplicação, o estabelecimento de conformidade com as normativas da LGPD (Lei Geral de Proteção de Dados),além da modelagem estética e funcional do design.
+
+Trabalhar com a API do Google Maps envolveu a incorporação de mapas interativos, integração com serviços de geolocalização, e a criação de funcionalidades dinâmicas baseadas em mapas para proporcionar uma experiência de usuário mais rica e envolvente.
+
+No domínio do backend, destaco a implementação bem-sucedida de autenticação utilizando JSON Web Tokens (JWT) em um ambiente FastAPI. Isso contribuiu para garantir a segurança da aplicação, possibilitando a autenticação eficiente e a autorização adequada para os usuários, conforme os requisitos do projeto. 
+
+Assumi a responsabilidade integral pelo desenvolvimento do front-end da aplicação, aplicando tecnologias modernas para criar interfaces intuitivas e visualmente atraentes. A familiaridade com Vue.js foi empregada para garantir uma experiência de usuário suave e responsiva.
+
+Comprometida com a privacidade e segurança dos dados, contribuí ativamente para a conformidade da aplicação com as diretrizes da Lei Geral de Proteção de Dados (LGPD). Isso incluiu a definição e implementação de políticas de privacidade, bem como a adoção de práticas que asseguram a proteção adequada das informações do usuário.
+
+No mais, temos os pontos específicos abaixo:
+
+- Implementação de autenticação JWT no framework FastAPI: sei fazer com autonomia.
+- Desenvolvimento de componentes, design e demais trabalhos necessários no front-end: sei fazer com autonomia.
+- Connhecimento sobre regras LGPD: sei fazer com autonomia.
+
+### Soft Skills
+
+Em minha trajetória profissional, cultivei um conjunto robusto de soft skills, estas habilidades, fundamentais para um ambiente de trabalho produtivo e inovador, têm sido a base de meu sucesso em equipes multidisciplinares e na entrega de soluções que verdadeiramente atendem às necessidades dos clientes. 
+
+A **colaboração** é o cerne da minha abordagem de trabalho. Reconheço a importância de sinergias produtivas, valorizando as contribuições individuais e acreditando que as melhores soluções emergem da colaboração e da troca de ideias. Estou sempre disposto a compartilhar conhecimento, apoiar colegas e aprender com a diversidade de perspectivas que uma equipe pode oferecer. 
+
+A **empatia** é uma habilidade essencial que tenho cultivado conscientemente. Entender as experiências e desafios dos outros não apenas fortalece os laços dentro da equipe, mas também me capacita a criar soluções mais centradas no usuário.
+
+O **foco no cliente** não é apenas um lema, mas sim um princípio orientador em todas as etapas do meu trabalho. Reconheço que o sucesso de qualquer projeto reside na satisfação do cliente. Isso implica em uma constante busca pela compreensão das necessidades do cliente, antecipando-se às expectativas e garantindo que cada decisão e entrega esteja alinhada com a criação de valor para o usuário final.
+
+Minha habilidade na **tomada de decisões** é fundamentada na análise crítica e na busca pela melhor solução possível. Considero dados objetivos, avalio diferentes perspectivas e levo em conta o impacto de minhas escolhas não apenas no curto prazo, mas também a longo prazo. Isso assegura que minhas decisões estejam alinhadas com os objetivos da equipe e os interesses dos clientes.
+
+Essas soft skills não são apenas características pessoais, mas compromissos vivos que integro diariamente ao meu trabalho, proporcionando não apenas eficiência, mas uma contribuição significativa para a construção de ambientes de trabalho produtivos e produtos que verdadeiramente fazem a diferença para nossos clientes.
 
 ## Contatos:
 
