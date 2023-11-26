@@ -1950,8 +1950,62 @@ weatherChartOptions.xaxis.categories = Object.keys(weather.temp)
 
 </details>
 
+<details><summary>Download de Relatório</summary>
+
+Para a construção do relatório utilizamos duas bibliotecas, [jsPDF](https://artskydj.github.io/jsPDF/docs/jsPDF.html) para criar documentos PDF dinamicamente no navegador e [html2canvas](https://html2canvas.hertzen.com/) que permite capturar o conteúdo renderizado de um elemento HTML em um navegador e convertê-lo em uma imagem (canvas). Isso inclui não apenas o texto, mas também gráficos, estilos, imagens e qualquer coisa que esteja sendo exibida na tela.
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/f4dbc360-646e-4f1e-b322-c01569290b12" />
+
+```
+async function generatePDF(op: any) {
+  const pdf = new jsPDF()
+
+  pdf.setFontSize(10)
+
+  pdf.text(`Id operação: ${op_id.value}`, 10, 10)
+  pdf.text(`Id da gleba: ${gl_id.value}`, 10, 20)
+
+...
+```
+
+>O código acima é o início de um processo de geração de PDF utilizando o jsPDF.
+
+>Já o código abaixo é um processo do uso do html2canvas, onde está capturando o conteúdo de um elemento HTML contendo um gráfico de séries temporais, convertendo-o em uma imagem, e adicionando essa imagem a uma nova página em um documento PDF, juntamente com o texto "Predição".
+
+```
+if (timeSeriesExist.value) {
+    const el = document.getElementById('chartContainer')
+
+    const options = {
+      type: 'dataURL'
+    }
+
+    const printCanvas = await html2canvas(el!, options)
+    let img = printCanvas.toDataURL('image/png').replace('image/png', 'image/time-series')
+
+    pdf.addPage()
+
+    pdf.text('Predição', 10, 10)
+
+    const imgData = img
+    const imgWidth = 100
+    const imgHeight = 100
+
+    pdf.addImage(imgData, 'PNG', 10, 20, imgWidth, imgHeight)
+  }
+```
+
+>Esta última linha do código pdf.save(${gl_id.value}.pdf) está salvando o documento PDF com o nome do id da gleba.
+
+```
+  pdf.save(`${gl_id.value}.pdf`)
+}
+```
+
+</details>
+
 <details><summary>Tela do administrador</summary>
-O administrador tem 2 grupos para lançar os termos, sendo eles os proprietários ou usuários normais.
+O administrador tem dois grupos para lançar os termos, sendo eles os proprietários ou usuários normais.
 
 <img src="https://github.com/beamedeiros/portfolio/assets/74321890/d2e91b9b-d2d3-4a86-b18a-81e2ef608515" />
 
