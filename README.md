@@ -1774,6 +1774,8 @@ Caso seu cadastro esteja correto. Você será direcionado à página de Login.
 
 >Caso o usuário já tenha uma conta e os termos forem atualizados, além de receber um alerta por e-mail, ele também é redirecinado para aceitar os novos termos.
 
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/10bbe18b-56eb-4d1a-96ef-0154a0a1bded" />
+
 </details>
 
 <details><summary>Tela do mapa</summary>
@@ -2056,10 +2058,6 @@ quill = new Quill('#editor', {
 ```
 
 >Este código Vue.js representa uma lista de parâmetros para os termos do usuário provedor de dados, permitindo a adição e remoção dinâmica de parâmetros.
-</details>
-
-<details><summary>Termos</summary>
-	
 </details>
 
 Como PO, também fiquei responsável por decidir as regras de LGPD.
