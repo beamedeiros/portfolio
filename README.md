@@ -1865,7 +1865,88 @@ const circleOptions = {
 
 </details>
 
-<details><summary>Série temporal</summary>
+<details><summary>Série temporal e Dados de Clima</summary>
+
+O ApexCharts é uma biblioteca de gráficos interativos em JavaScript que permite criar visualizações de dados elegantes e responsivas para páginas da web. Essa biblioteca é construída sobre o popular framework JavaScript chamado Vue.js, mas também oferece suporte a outros frameworks como React, Vue e Angular. Para saber mais [clique aqui](https://apexcharts.com/docs/installation/).
+
+<details><summary>Predição</summary>
+	
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/cf7cbc35-702a-4e7c-b185-ee3ba52d8390" />
+
+```
+  timeSeriesExist.value = true
+  let data: chartData = {}
+  let data_predict: chartData = {}
+
+  for (let i in ts.data.data) {
+    let d = new Date(parseInt(i, 10))
+    let formatted_data = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(
+      2,
+      '0'
+    )}-${String(d.getDate()).padStart(2, '0')}`
+    data_predict[formatted_data] = null
+    data[formatted_data] = ts.data.data[i]
+  }
+  for (let i in ts.data.predict) {
+    let d = new Date(parseInt(i, 10))
+    let formatted_data = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(
+      2,
+      '0'
+    )}-${String(d.getDate()).padStart(2, '0')}`
+    data_predict[formatted_data] = ts.data.predict[i]
+  }
+  timeSeriesData.value = Object.values(data)
+  timeSeriesPredict.value = Object.values(data_predict)
+```
+
+>Este trecho realiza a formatação de dados temporais, organizando os dados existentes e de previsão em objetos específicos e, em seguida, alimentando esses dados em variáveis reativas que provavelmente são usadas para renderizar um gráfico de séries temporais.
+
+```
+const predictChartOptions = {
+  chart: {
+    type: 'area'
+  },
+  stroke: {
+    curve: 'smooth'
+  },
+  xaxis: {
+    categories: []
+  }
+}
+const chartSeries = [
+  {
+    name: 'NDVI',
+    data: timeSeriesData
+  },
+  {
+    name: 'Predição',
+    data: timeSeriesPredict 
+  }
+]
+```
+
+>Esse código, portanto, configura um gráfico de área suavizado (smooth area chart) usando ApexCharts. Ele espera receber as categorias ao longo do eixo x dinamicamente e possui duas séries de dados, uma representando o NDVI e outra representando dados de previsão (Predição).
+</details>
+
+<details><summary>Open Weather</summary>
+
+A OpenWeatherMap (OpenWeather) é uma empresa que fornece serviços de dados meteorológicos, incluindo previsões do tempo, informações atuais e históricas. Eles oferecem uma API que permite aos desenvolvedores acessar e integrar dados meteorológicos em suas próprias aplicações, sites ou serviços. Para saber mais [clique aqui](https://openweathermap.org/guide).
+
+<img src="https://github.com/beamedeiros/portfolio/assets/74321890/6ce2a672-aeb8-4b17-b722-362614b8937e" />
+
+```
+let weather = ts.data.weather
+tempSeriesData.value = Object.values(weather.temp)
+pressureSeriesData.value = Object.values(weather.pressure)
+humiditySeriesData.value = Object.values(weather.humidity)
+windSeriesData.value = Object.values(weather.wind_speed)
+cloudsSeriesData.value = Object.values(weather.clouds)
+weatherChartOptions.xaxis.categories = Object.keys(weather.temp)
+```
+
+> Esse trecho organiza dados meteorológicos em diferentes séries (temperatura, pressão, umidade, velocidade do vento, nuvens) e configura as variáveis reativas correspondentes. Além disso, atualiza as categorias ao longo do eixo x nas opções do gráfico, possivelmente para refletir as datas associadas aos dados meteorológicos. Esses dados e configurações são utilizados para renderizar o gráfico meteorológico interativo.
+
+</details>
 
 </details>
 
