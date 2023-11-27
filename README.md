@@ -6,7 +6,7 @@ Olá, sejam bem-vindos!!
 
 Sou Beatriz Medeiros de Oliveira Santos (mais conhecida por Bea), estudante de Banco de Dados pela FATEC Prof. Jessen Vidal no período noturno. 
 
-Tenho 21 anos e trabalho como estagiária na empresa Sophia, responsável por Gestão de Escolas e Bibliotecas. <br/>
+Tenho 21 anos e trabalho como estagiária na empresa Soluções Sophia, responsável por Gestão de Escolas e Bibliotecas. <br/>
 
 <img src="https://user-images.githubusercontent.com/74321890/200823701-ea0c19fc-e79b-4e1d-9361-1d8fa1cade6a.jpg" width="300"/>
 
