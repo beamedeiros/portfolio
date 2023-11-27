@@ -2060,7 +2060,7 @@ quill = new Quill('#editor', {
 >Este código Vue.js representa uma lista de parâmetros para os termos do usuário provedor de dados, permitindo a adição e remoção dinâmica de parâmetros.
 </details>
 
-Como PO, também fiquei responsável por decidir as regras de LGPD.
+Como PO, também fiquei responsável por estudar os dados do cliente e decidir as regras de LGPD que são coerentes e aplicáveis as regras de negócio do nosso produto.
 Sendo elas:
 - Backup do banco de dados;
 - Aceite de termos da aplicação;
