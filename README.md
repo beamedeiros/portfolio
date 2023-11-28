@@ -14,9 +14,9 @@ Tenho 21 anos e trabalho como estagiária na empresa Soluções Sophia, respons�
 
 #### Java
 <p align="justify">
-Na faculdade, ficamos reponsáveis por trabalhar com back-end e uma das principais linguagens aprendidas e requisitadas foi Java.
+Na faculdade, fiquei reponsáveis por trabalhar com back-end e uma das principais linguagens aprendidas e requisitadas foi Java.
 
-Utilizamos para o desenvolvolvimento de API's e serviços com o auxílio do framework Spring Boot e também do framework Hibernate. 
+Utilizei para o desenvolvolvimento de API's e serviços com o auxílio do framework Spring Boot e também do framework Hibernate. 
 
 Por conta desta experiência, Java e seu ecossistema para desenvolvimento web é onde possuo maior contato. 
 
@@ -46,9 +46,8 @@ A Fatec é uma Faculdade Pública Estadual e todos os cursos oferecidos são gra
 
 ### Visão do Projeto
 
-Desenvolver uma aplicação em python que conseguisse reconhecer voz e atuar conforme os comandos do usuário.
-Com o propósito de trazer para os estudantes em geral uma forma mais centralizada e organizada de cuidar da vida acadêmica e se manter atualizado em suas atividades, 
-criamos a Athena- Assistente Pessoal de Estudos. O seu diferencial é reunir diversas ferramentas úteis em um único lugar.
+Neste projeto propõe-se o desenvolvimento de uma aplicação em python para reconhecer voz e atuar conforme os comandos do usuário.
+Com o propósito de trazer para os estudantes em geral uma forma mais centralizada e organizada de cuidar da vida acadêmica e se manter atualizado em suas atividades, a Athena- Assistente Pessoal de Estudos reúne diversas ferramentas úteis em um único lugar.
 
 [<img src="https://user-images.githubusercontent.com/74321890/221615575-d2721589-5e18-438c-b8f3-4e6dfe50d199.png" width="40%">](https://www.youtube.com/watch?v=E_I9MvQs9BE "Athena vídeo Demonstração")
 
@@ -175,15 +174,15 @@ A imagem abaixo mostra a disposição de informações e resultado do gráfico.
 
 ### Hard Skills
 
-Neste projeto obtive meu primeiro contato com Python e documentações. Esta experiência me ensinou a buscar informações nas fontes primárias, que são as documentações técnicas geralmente realizadas pelos próprios criadores e responsáveis pelas mais diversas tecnologias. Este aprendizado é de grande valia até hoje em minha trajetória acadêmica e profissional.
+Neste projeto obtive meu primeiro contato com Python e documentações. Esta experiência me ensinou a buscar informações nas fontes primárias, que são as documentações técnicas geralmente realizadas pelos próprios criadores e responsáveis pelas mais diversas tecnologias. Este projeto foi valioso até hoje em minha trajetória acadêmica e profissional.
 
-Além disso, o desafio de observar um problema prático e ter como tarefa criar uma solução até então inexistente naquele contexto específico, exercitou habilidades que considero importantes para todo analista e desenvolvedor de software. 
+Olhar para um problema real e depois inventar uma solução que ainda não existe nesse cenário específico foi um desafio interessante. Isso me ajudou a desenvolver habilidades importantes para quem trabalha com análise e desenvolvimento de software.
 
 Com este desafio, realizei minha primeira decisão de qual tecnologia e tática utilizar em uma solução, e também os detalhes de como implementá-las. Estas decisões são frequentes na carreira de soluções tecnológicas, onde diversas vezes optar pela solução mais eficiente no curto, médio e longo prazo são extremamente necessárias.
 
 Além disso, consegui distinguir a velocidade de profundidade e velocidade em diferentes métodos de pesquisa e estudo. Diversos tutoriais estão disponíveis ensinando a realizar grande partes das etapas de projetos deste tipo, e estes conteúdos possuem sua importância. 
 
-No mais, temos os pontos específicos abaixo:
+No mais, temos os pontos específicos a seguir:
 
 - Reconhecimento de voz: sei fazer com autonomia.
 - Envio de e-mail automático: sei fazer com autonomia.
@@ -203,7 +202,7 @@ Desenvolvimento estratégico de software para necessidades específicas.
 
 ### Visão do Projeto
 
-Aplicação de monitoramento voltada somente à SGBDs, focada na performance e desempenho. Através da coleta de dados do SGBD (memória, tempo de consultas, espaço em disco, transações, evolução da memória, caches e registros) que influenciam na saúde e manutenção periódica.
+Este projeto teve como proposta uma aplicação de monitoramento voltada somente à SGBDs, focada na performance e desempenho, através da coleta de dados do SGBD (memória, tempo de consultas, espaço em disco, transações, evolução da memória, caches e registros) que influenciam na saúde e manutenção periódica.
 
 [<img src="https://user-images.githubusercontent.com/74321890/200989611-49f7bac0-fb95-4efd-a935-5c38141a6458.png" width="40%">](https://www.youtube.com/watch?v=zVTsaxL_-l4&list=PLUOBqJKbljZvQtu2OXq071Id11zidSJNS "SGBD Health vídeo Demonstração")
 
@@ -328,7 +327,7 @@ A MidAll é uma empresa que se dedica a ajudar outras empresas a se adaptarem à
 
 ### Visão do Projeto
 <p align="justify">
-Ferramenta para criar promoções de E-commerce, onde as mecânicas de promoções são feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. Atualmente implementamos e apresentaremos o cadastro dos produtos em várias promoções no servidor/ banco de dados, utilizando operadores lógicos para criar diferentes mecânicas de promoções, o desconto é aplicado na sacola de compra e possui uma visualização dedicada para conferência e escolha de possíveis promoções. Além disso, há a autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e para editar, deletar, interromper ou ativar promoções e da visualização prática e intuitiva dos produtos e promoções cadastradas através da listagem que possui um filtro para que seja possível diferenciar quais os status de produtos e promoções.
+Neste projeto propõe-se o desenvolvimento de uma ferramenta para criar promoções de E-commerce, de forma que mecânicas de promoções fossem feitas de forma flexível e de rápida atualização no sistema. As regras de promoções são cadastradas e posteriormente aplicadas no momento em que os itens são adicionados ao carrinho. No desenvolvimento foi implementado e apresentado o cadastro dos produtos em várias promoções no servidor/ banco de dados, utilizando operadores lógicos para criar diferentes mecânicas de promoções, o desconto é aplicado na sacola de compra e possui uma visualização dedicada para conferência e escolha de possíveis promoções. Além disso, há a autonomia fornecida ao usuário para editar, remover, arquivar ou desarquivar seus produtos e para editar, deletar, interromper ou ativar promoções e da visualização prática e intuitiva dos produtos e promoções cadastradas através da listagem que possui um filtro para que seja possível diferenciar quais os status de produtos e promoções.
 
 [<img src="https://github.com/DolphinDatabase/DescontOn/blob/main/Imagens/DescontOn-Youtube.png" width="40%">](https://www.youtube.com/watch?v=n5GK4uJpNkk&list=PLUOBqJKbljZsrdWoo8YF8GLvADBIIRMPV "DescontOn vídeo Demonstração")
 
@@ -455,8 +454,8 @@ Abaixo apresento um exemplo da chamada do DTO dentro de ProdutoController:
   
 </details>
 
-Na parte de usabilidade, desenvolvi os Wireframes no Figma e fiz cada tela prezando pela experiência do usuário (UX - user experience). Utilizamos template 
-do Bootstrap e trabalhamos com HTML/ CSS e JavaScript para o desenvolvimento da aplicação web.
+Na parte de usabilidade, desenvolvi os Wireframes no Figma e fiz cada tela prezando pela experiência do usuário (UX - user experience). Utilizei template 
+do Bootstrap e trabalhei com HTML/ CSS e JavaScript para o desenvolvimento da aplicação web.
 <details><summary>Página inicial</summary>
 A imagem abaixo mostra a página inicial da aplicação, a usabilidade das cores (o que transmite para o usuário) e a forma como a barra de navegação é organizada.
 <img src="https://user-images.githubusercontent.com/74321890/203669780-f534d9e9-698e-4341-8459-e819e880ea0a.png">
@@ -479,7 +478,7 @@ O trecho de código a seguir mostra como montamos o componente de boas-vindas à
 ```
 </details>
 	
-Atuei como Scrum Master, gerenciando e ajudando com impedimentos do time. Como ferramenta de apoio utilizamos o Jira para ter mais visualização e controle sobre as tarefas e suas divisões para cada membro da equipe.
+Atuei como Scrum Master, gerenciando e ajudando com impedimentos do time. Como ferramenta de apoio foi utilizado o Jira para ter mais visualização e controle sobre as tarefas e suas divisões para cada membro da equipe.
 <details><summary>Jira - DescontOn</summary>
 Para mostrar melhor a usabilidade do Jira e divisão de histórias, abaixo está o roadmap do projeto. 
 
@@ -525,13 +524,9 @@ A Subiter é uma empresa de base tecnológica especializada em visão infraverme
 
 ### Visão do Projeto
 <p align="justify">
-Sistema ERP que visa gerenciar e controlar dados, afim de reduzir custos, facilitar tomadas de decisão, otimizar o tempo de atendimento de chamados e aprimorar o 
-solucionamento destes. É composta por níveis de usuários, onde o administrador terá controle sobre todas as funcionalidades existentes, dentre elas o cadastro, edição e exclusão de outros usuários; o suporte ficará responsável pelo CRUD de falhas e soluções genéricas e CRUD de equipamentos; o cliente trará o problema para o suporte e, este ficará responsável por gerenciar o chamado e resolvê-los.
+Este sistema ERP tem como foco principal o gerenciamento eficiente de dados, visando redução de custos, facilitação das tomadas de decisão, otimização do tempo de atendimento a chamados e aprimoramento na resolução desses problemas. Um destaque crucial é o MCS (Sistema de Gerenciamento e Controle), que oferece de maneira fácil e rápida um recurso de extrema importância: o mapeamento gráfico de anomalias nas silhuetas.
 
-A MCS (Management and Control System) trouxe de uma forma fácil e rápida o mais importante: o mapeamento gráfico de anomalias nas silhuetas.
-  
-<p align="justify">
-O Mapemamento de anomalias consiste em durante ou após uma inspeção, o suporte conseguirá fazer o upload da silhueta e adicionar as falhas (específicas do chamado) encontradas em formas e tamanhos diferentes para uma melhor identificação da posição e tamanho, facilitando na identificação de quantidade e quais materiais serão utilizados para a solução dessas falhas e também no cálculo do orçamento.
+O Mapeamento de Anomalias é uma funcionalidade que permite ao suporte, durante ou após uma inspeção, fazer o upload da silhueta e adicionar detalhes específicos sobre as falhas encontradas. Isso é feito de forma visual, atribuindo formas e tamanhos diferentes para uma identificação mais eficaz da posição e do tamanho das anomalias. Essa abordagem facilita não apenas a identificação da quantidade e tipo de falhas, mas também auxilia na escolha dos materiais necessários para solucioná-las, além de possibilitar o cálculo preciso do orçamento. Em resumo, o MCS destaca-se por proporcionar uma ferramenta poderosa de mapeamento de anomalias, contribuindo significativamente para a eficiência no diagnóstico e resolução de problemas.
 
 Sua interface web facilita a gestão de dados e dá autonomia aos usuários dessa aplicação para que possam atuar com desenvoltura dentro das permissões concedidas. 
 
@@ -573,11 +568,11 @@ Para acessar a documentação sobre como conectar Autonomous Database da Oracle 
 ### Contribuições pessoais
 <p align="justify">
 
-Neste projeto minha principal responsabilidade no código foi o desenvolvimento das telas no front-end, utilizando a biblioteca Element+ para ícones, tabelas, entre outros e konva para o desenho do mapeamento de anomalias. 
+Neste projeto minha principal responsabilidade no código foi o desenvolvimento das telas no front-end utilizando a biblioteca Element+ para ícones, tabelas, entre outros e konva para o desenho do mapeamento de anomalias. 
 
-Trabalhando com o VueJS, a separação de código acontece por meio de views, components, entre outros.
+No desenvolvimento com VueJS, a organização do código é realizada através da utilização de "views", "components" e outros elementos.
 
-Abaixo mostro alguns exemplos do desenvolvimento do **front-end** em VueJS.
+A seguir mostro alguns exemplos do desenvolvimento do **front-end** em VueJS.
 <details><summary>Tela - Home</summary>
 <p align="justify">
 
