@@ -30,9 +30,9 @@ Atualmente trabalho com desenvolvimento web utilizando o framework VueJS.
 
 #### Projetos Integradores durante a graduação
 <p align="justify">
-Durante a minha gradução, trabalhei no desenvolvimento de trabalhos chamados de "Projetos integradores". Um projeto integrador tem o objetivo de solucionar um problemado mundo real, utilizando os conhecimentos adquiridos durante a graduação.<br/>
+Durante a minha gradução, trabalhei no desenvolvimento de trabalhos chamados de "Projetos integradores". Um projeto integrador tem o objetivo de solucionar um problema do mundo real, utilizando os conhecimentos adquiridos durante a graduação.<br/>
 
-Abaixo todos estes projetos serão descritos, detalhando o problema, solução proposta (e entregue), e os aprendizados extraídos de cada um deles.
+Abaixo, todos estes projetos serão descritos, detalhando o problema, solução proposta (e entregue), e os aprendizados extraídos de cada um deles.
 
 # Projeto 1: 1º Semestre de 2021
 
