@@ -779,7 +779,7 @@ A MidAll é uma empresa que se dedica a ajudar outras empresas a se adaptarem à
 	
 ### Visão do Projeto
 
-O software Cloud-In é um aplicativo orquestrador para transferência automática de arquivos entre sistemas de armazenamento online. Através de sua interface minimalista e interativa, o usuário pode cadastrar suas credenciais e configurar as transferências conforme sua necessidade, iniciando a jornada de download e upload entre os storages.
+Foi proposto um aplicativo orquestrador para transferência automática de arquivos entre sistemas de armazenamento online. O Cloud-In, através de sua interface minimalista e interativa, o usuário consegue cadastrar suas credenciais e configurar as transferências conforme sua necessidade, iniciando a jornada de download e upload entre os storages.
 
 [<img src="https://user-images.githubusercontent.com/74321890/228991716-687c07f9-3b6a-4cea-b855-677b51b2b20a.svg" width="40%">](https://www.youtube.com/watch?v=AGRvBq9Xq4U&list=PLUOBqJKbljZsvHbaHWKrQ3z0l9l2Uo_f0 "Cloud-in vídeo Demonstração")
 
@@ -787,7 +787,7 @@ Link do repositório do projeto: https://github.com/DolphinDatabase/Cloud-In
 
 ### Tecnologias adotadas na solução
 
-Para o desenvolvimento web utilizamos o framework VueJS, já citado anteriormente no projeto 4, porém com o framework Tailwind para o CSS.
+Para o desenvolvimento web utilizou-se o framework VueJS, já citado anteriormente no projeto 4, porém com o framework Tailwind para o CSS.
 
 <details><summary>Tailwind</summary>
 <p align="justify">
@@ -1057,9 +1057,9 @@ A "StatefulSet" has been defined in Kubernetes to run a MySQL database instance.
 </details>
 
 ### Contribuições pessoais
-Neste projeto, minhas principais funções foram o desenvolvimento das telas no front-end e sua prototipação, autenticação utilizando Google, testes unitários e rotas no back-end, além de ser PO, mantendo um contato contínuo com o cliente afim de praticar comunicação.
+Neste projeto, minhas principais funções foram o desenvolvimento das telas no front-end e sua prototipação, autenticação utilizando Google, testes unitários e rotas no back-end, além de ser PO, cuja função foi manter um contato contínuo com o cliente afim de praticar comunicação.
 
-Abaixo mostro alguns exemplos do desenvolvimento do **front-end** em VueJS.
+A seguir, são mostrados alguns exemplos do desenvolvimento do **front-end** em VueJS.
 
 <details><summary>Tela - Home</summary></summary>
 <p align="justify">
@@ -1322,7 +1322,7 @@ export default async function notify(data) {
 
 </details>
 
-A seguir, mostro como foi feita a autenticação com o [Google Drive](https://developers.google.com/drive/api/guides/about-sdk?hl=pt_BR).
+A seguir, mostro como contribui com a autenticação do [Google Drive](https://developers.google.com/drive/api/guides/about-sdk?hl=pt_BR).
 
 <details><summary>Autenticação</summary></summary>
 <p align="justify">
@@ -1482,11 +1482,11 @@ def test_files_by_folder():
 
 ### Hard Skills
 
-Neste projeto obtive meu primeiro contato com api do Google e DevOps. Foi muito importante também para o meu desenvolvimento utilizando a linguagem Python, visto que a última e única utilização desta foi no primeiro semestre.
+Neste projeto obtive meu primeiro contato com API do Google e DevOps. Esse projeto também foi muito importante para o meu desenvolvimento utilizando a linguagem Python, visto que a última e única utilização desta foi no primeiro semestre.
 
-Além disso, utilizar DevOps pela primeira vez foi ótimo, pois permite a colaboração contínua entre desenvolvedores e operadores, acelerando a entrega de software, melhorando a qualidade e a confiabilidade das aplicações, e promovendo uma cultura de automação e feedback constante, que resulta em maior eficiência e satisfação dos clientes.
+Além disso, a utilização do DevOps pela primeira vez foi ótimo, pois me permitiu a colaboração contínua entre desenvolvedores e operadores, acelerando a entrega de software, melhorando a qualidade e a confiabilidade das aplicações, e promovendo uma cultura de automação e feedback constante, o que resultou em maior eficiência e satisfação dos clientes.
 
-No mais, temos os pontos específicos abaixo:
+No mais, seguem alguma outras hard skills:
 
 - Testes unitários: sei fazer com autonomia.
 - Desenvolvimento de componentes, design e demais trabalhos necessários no front-end: sei fazer com autonomia.
