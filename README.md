@@ -1322,7 +1322,7 @@ export default async function notify(data) {
 
 </details>
 
-A seguir, mostro como contribui com a autenticação do [Google Drive](https://developers.google.com/drive/api/guides/about-sdk?hl=pt_BR).
+Abaixo, mostro como contribui com a autenticação do [Google Drive](https://developers.google.com/drive/api/guides/about-sdk?hl=pt_BR).
 
 <details><summary>Autenticação</summary></summary>
 <p align="justify">
