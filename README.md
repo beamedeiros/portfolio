@@ -2078,6 +2078,7 @@ No mais, temos os pontos específicos abaixo:
 - Implementação de autenticação JWT no framework FastAPI: sei fazer com autonomia.
 - Desenvolvimento de componentes, design e demais trabalhos necessários no front-end: sei fazer com autonomia.
 - Connhecimento sobre regras LGPD: sei fazer com ajuda.
+- Uso e integração com o Slack: sei fazer com autonomia.
 
 ### Soft Skills
 
