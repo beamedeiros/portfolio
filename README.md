@@ -186,7 +186,7 @@ No mais, temos os pontos específicos a seguir:
 
 - Reconhecimento de voz: sei fazer com autonomia.
 - Envio de e-mail automático: sei fazer com autonomia.
-- Desenvolvimento de scripts em Python: sei fazer com autonomia.
+- Desenvolvimento de scripts em Python: sei fazer com ajuda.
 
 ### Soft Skills
 
@@ -1490,7 +1490,7 @@ No mais, seguem alguma outras hard skills:
 
 - Testes unitários: sei fazer com autonomia.
 - Desenvolvimento de componentes, design e demais trabalhos necessários no front-end: sei fazer com autonomia.
-- Desenvolvimento de scripts em Python: sei fazer com autonomia.
+- Desenvolvimento de scripts em Python: sei fazer com ajuda.
 
 ### Soft Skills
 
@@ -2077,7 +2077,7 @@ No mais, temos os pontos específicos abaixo:
 
 - Implementação de autenticação JWT no framework FastAPI: sei fazer com autonomia.
 - Desenvolvimento de componentes, design e demais trabalhos necessários no front-end: sei fazer com autonomia.
-- Connhecimento sobre regras LGPD: sei fazer com autonomia.
+- Connhecimento sobre regras LGPD: sei fazer com ajuda.
 
 ### Soft Skills
 
