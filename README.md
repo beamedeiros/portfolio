@@ -1510,7 +1510,7 @@ A Visiona Tecnologia Espacial é uma joint-venture entre a Embraer Defesa & Segu
 
 ### Visão do Projeto
 
-O POP é uma plataforma de monitoramento das atividades agropecuárias cadastradas no Proagro. Além disso, o sistema possui ferramentas de previsão que visam auxiliar o usuário na tomada de decisão.
+O POP é uma plataforma de monitoramento das atividades agropecuárias cadastradas no Proagro. Além disso, o sistema possui ferramentas de previsão de NDVI e ferramentas metereológicas que visam auxiliar o usuário na tomada de decisão. 
 
 [<img src="https://github.com/DolphinDatabase/POP/assets/74321890/1930571b-dd33-4331-8624-17867451e940" width="40%">](https://www.youtube.com/watch?v=-L3xjt2aHUY&list=PLUOBqJKbljZvDd8dOXBFlEHLtTTWCrRLk "pop vídeo Demonstração")
 
@@ -1575,7 +1575,7 @@ Element Plus é uma biblioteca de componentes Vue.js baseada no Element UI. Amba
 
 ### Contribuições pessoais
 
-No código, criei a autenticação com JWT no FastAPI, abaixo mostro alguns exemplos.
+No código, criei a autenticação com JWT no FastAPI, abaixo são mostrados alguns exemplos.
 	
 <details><summary>Autenticação </summary>
 <p align="justify">
@@ -2073,9 +2073,9 @@ Assumi a responsabilidade integral pelo desenvolvimento do front-end da aplicaç
 
 Comprometida com a privacidade e segurança dos dados, contribuí ativamente para a conformidade da aplicação com as diretrizes da Lei Geral de Proteção de Dados (LGPD). Isso incluiu a definição e implementação de políticas de privacidade, bem como a adoção de práticas que asseguram a proteção adequada das informações do usuário.
 
-No mais, temos os pontos específicos abaixo:
+No mais, são destacados os pontos específicos abaixo:
 
-- Implementação de autenticação JWT no framework FastAPI: sei fazer com autonomia.
+- Implementação de autenticação JWT no framework FastAPI: sei fazer com ajuda.
 - Desenvolvimento de componentes, design e demais trabalhos necessários no front-end: sei fazer com autonomia.
 - Connhecimento sobre regras LGPD: sei fazer com ajuda.
 - Uso e integração com o Slack: sei fazer com autonomia.
