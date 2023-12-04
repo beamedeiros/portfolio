@@ -1510,7 +1510,7 @@ A Visiona Tecnologia Espacial é uma joint-venture entre a Embraer Defesa & Segu
 
 ### Visão do Projeto
 
-O POP é uma plataforma de monitoramento das atividades agropecuárias cadastradas no Proagro. Além disso, o sistema possui ferramentas de previsão de NDVI e ferramentas metereológicas que visam auxiliar o usuário na tomada de decisão. 
+O POP é uma plataforma de monitoramento das atividades agropecuárias cadastradas no Proagro. Além disso, o sistema possui ferramentas de previsão de NDVI e ferramentas meteorológicas que visam auxiliar o usuário na tomada de decisão. 
 
 [<img src="https://github.com/DolphinDatabase/POP/assets/74321890/1930571b-dd33-4331-8624-17867451e940" width="40%">](https://www.youtube.com/watch?v=-L3xjt2aHUY&list=PLUOBqJKbljZvDd8dOXBFlEHLtTTWCrRLk "pop vídeo Demonstração")
 
